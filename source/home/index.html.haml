@@ -1,8 +1,21 @@
-%section
+%section.no-padding-top
 	.container
-		.col-md-2
-		.col-md-8
-			.well
-				%p.text-center
-					Card View
-		.col-md-2
+		.col-md-1
+		.col-md-10
+			.panel.card.panel-default
+				.pabel-body
+					.text-center.padded
+						=image_tag "http://fillmurray.com/200/200"
+				.panel-footer
+					%h2.no-margin-bottom
+						Vanway
+					%p.no-margin-bottom
+						Operations Expert
+					%hr
+					%p.half-margin-bottom
+						This job venenatis purus placerat hendrerit. Nunc sed magna eleifend, rhoncus odio id, porttitor mi. Etiam nec porttitor tellus. 
+					%p
+						%a{:href=>"#"}
+							More
+							%i.fa.fa-arrow-right
+		.col-md-1
