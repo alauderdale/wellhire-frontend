@@ -1,3 +1,9 @@
+.btn{
+	&.btn-primary{
+		background:$primary-color;
+	}
+}
+
 a{
 	&:hover{
 		text-decoration:none;
