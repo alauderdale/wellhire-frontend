@@ -1,0 +1,19 @@
+%nav#mainLeftNavSideMenu.navmenu.navmenu-default.navmenu-fixed-left.offcanvas.side-nav{:role => "navigation"}
+	%p.logotype
+		Wellhire
+	-4.times do
+		%a.side-menu-link{:href=>"#"}
+			%i.fa.fa-user.quarter-margin-right
+			Profile
+%nav#mainNavRightSideMenu.navmenu.navmenu-default.navmenu-fixed-right.offcanvas.side-nav{:role => "navigation"}
+	%p
+		wow
+.navbar.navbar-default.main-nav-topbar
+	.container
+		%a.menu-toggle.topbar-btn.navbar-btn.btn.pull-left{"data-canvas" => "body", "data-target" => "#mainLeftNavSideMenu", "data-toggle" => "offcanvas", :href=>"javascript:void(0);"}
+			%i.fa-bars.fa.quarter-margin-right
+			Menu
+		/ %p.no-margin-bottom.text-center.navbar-text.pull-left{:style=>"top:-3px;"}
+		/ 	Wellhire
+		%a.menu-toggle.topbar-btn.navbar-btn.btn.pull-right{"data-canvas" => "body", "data-target" => "#mainNavRightSideMenu", "data-toggle" => "offcanvas", :href=>"javascript:void(0);"}
+			%i.fa-bell.fa
