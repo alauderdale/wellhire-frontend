@@ -10,21 +10,29 @@
 			padding-bottom:$baseline/2;
 			font-family:$bold-font-name;
 	}
-	.logotype{
-		font-size:1em;
-		margin-bottom:$baseline;
-		border-bottom:1px solid rgba(255,255,255,.2);
-		font-family:$light-font-name;
-	}
-	a.side-menu-link{
-		border-bottom:1px solid rgba(255,255,255,.2);
-		padding:$baseline/2 0;
-		display:block;
-		color:rgba(255,255,255,.8);
-		@include transition-duration(.2s);
-		&:hover{
-			color:white;
+	a{
+		&.logotype{
+			font-size:1em;
+			margin-bottom:$baseline;
+			border-bottom:1px solid rgba(255,255,255,.2);
+			font-family:$light-font-name;
+			display:block;
+			color:rgba(255,255,255,.8);
+			&:hover{
+				color:white;
+			}
+		}
+		&.side-menu-link{
+			border-bottom:1px solid rgba(255,255,255,.2);
+			padding:$baseline/2 0;
+			display:block;
+			color:rgba(255,255,255,.8);
+			@include transition-duration(.2s);
+			&:hover{
+				color:white;
+			}
 		}
 	}
+
 
 }
