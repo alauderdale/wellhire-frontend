@@ -1,12 +1,29 @@
 ;;;
 "layout": "login",
-"title": "Home", 
-"activeclass": "home"
+"title": "Home"
 ;;;
 
 %section
 	.container
-		.col-lg-12
-			%a.btn.btn-primary.btn-block{:href=>"/home"}
-				%i.fa.fa-linkedin.half-margin-right
-				Connect With Linkedin
+		.col-md-3
+		.col-md-6
+			.panel.panel-default.login-panel
+				.panel-heading
+					.padded.no-padding-top.no-padding-bottom
+						.text-center.margin-top
+							=image_tag '/images/logo_white.png', :width=>"150px", :class=>"margin-bottom"
+						.clearfix
+							%h3.text-center.light-font-name
+								Connect your linkedin account
+				.panel-body
+					.padded.no-padding-top
+						%p.text-center
+							Wellhire uses LinkedIn to build your profile for you. Login in below to get started.
+						%form#linkedInConnect
+							.margin-bottom
+								%input.input-lg.form-control.login-input{:placeholder => "LinkedIn Email Address", :type => "text"}
+								%input.input-lg.form-control.login-input-pass{:placeholder => "LinkedIn Password", :type => "password"}
+						%a.btn.btn-primary.btn-block.btn-lg{:href=>"/home"}
+							%i.fa.fa-linkedin.half-margin-right
+							Connect With Linkedin
+		.col-md-3

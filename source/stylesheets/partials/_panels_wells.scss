@@ -1,0 +1,12 @@
+.panel{
+	&.login-panel{
+		border:none;
+		.panel-heading{
+			background-color:$primary-color;
+			@extend .white-text;
+		}
+		.panel-body{
+			background-color:#f2f2f2;
+		}
+	}
+}
