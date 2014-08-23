@@ -1,4 +1,8 @@
-
+ @media screen and (-webkit-min-device-pixel-ratio:0) { 
+ select:focus, textarea:focus, input:focus, ::-webkit-input-placeholder {
+ 		font-size: 16px;
+  }
+ }
 
 .login-input {
   margin-bottom: -1px;
