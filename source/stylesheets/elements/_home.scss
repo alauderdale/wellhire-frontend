@@ -8,19 +8,11 @@
 			margin-left:$baseline;
 		}
 		&.info-btn{
-			color:#aaa;
+			color:$text-color;
 		}
 	}
 }
 
 .match-label{
-	background:$text-color;
-	padding:10px 5px;
-	font-size:.8em;
-	border-radius:100px;
-	p{
-		color:white;
-		font-family:$bold-font-name;
-		line-height:10px;
-	}
+
 }
