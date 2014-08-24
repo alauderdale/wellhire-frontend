@@ -1,38 +1,46 @@
 %section.no-padding-top
 	.container
-		.col-md-2
-		.col-md-8
-			.panel.card.panel-default
-				.pabel-body
-					.text-center
-						=image_tag "company_logo.png", :class=>"img-responsive"
-				.panel-footer
-					%p.no-margin-bottom.bold-font-name
-						Alpha Sites
-					%p.no-margin-bottom
-						Designer
-					%hr
-					%p.no-margin-bottom
-						Recently nammed the UK's 3ed fastest growing company by Sunday Times Track 100. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of
-						%br
-					%p.text-center.no-margin-bottom
-						%i.fa.fa-chevron-down
-					%hr
-					.row
-						.col-xs-4.text-center
-							%i.fa.fa-location-arrow
-							%p.microtext.bold-font-name.no-margin-bottom
-								New York, NY
-						.col-xs-4.text-center
-							%i.fa.fa-suitcase
-							%p.microtext.bold-font-name.no-margin-bottom
-								Full-time
-						.col-xs-4.text-center
-							%i.fa.fa-dollar
-							%p.microtext.bold-font-name.no-margin-bottom
-								Competitive
-					.row
-						.col-lg-12
-
-
-		.col-md-2
+		.row
+			.col-md-2
+			.col-md-8
+				.panel.card.panel-default.half-margin-bottom
+					.pabel-body
+						.text-center
+							=image_tag "company_logo.png", :class=>"img-responsive"
+					.panel-footer
+						%p.no-margin-bottom.bold-font-name
+							Alpha Sites
+						%p.no-margin-bottom
+							Designer
+						%hr
+						%p.no-margin-bottom
+							Recently nammed the UK's 3ed fastest growing company by Sunday Times Track 100. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of
+							%br
+						%p.text-center.no-margin-bottom
+							%i.fa.fa-chevron-down
+						%hr
+						.row
+							.col-xs-4.text-center
+								%i.fa.fa-location-arrow
+								%p.microtext.bold-font-name.no-margin-bottom
+									New York, NY
+							.col-xs-4.text-center
+								%i.fa.fa-suitcase
+								%p.microtext.bold-font-name.no-margin-bottom
+									Full-time
+							.col-xs-4.text-center
+								%i.fa.fa-dollar
+								%p.microtext.bold-font-name.no-margin-bottom
+									Competitive
+		.row
+			.col-md-2
+			.col-md-8
+				.margin-auto.text-center.card-picker-btn-group
+					%a.text-success.yes-btn{:href => "#"} 
+						%i.fa.fa-times
+					%a.info-btn{:href => "#"} 
+						%i.fa.fa-info-circle
+					%a.text-danger.no-btn{:href => "#"} 
+						%i.fa.fa-check
+				.col-md-2
+			.col-md-2

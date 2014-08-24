@@ -1,0 +1,14 @@
+.card-picker-btn-group{
+	a{
+		font-size:$baseline*1.5;
+		&.yes-btn{
+			margin-right:$baseline;
+		}
+		&.no-btn{
+			margin-left:$baseline;
+		}
+		&.info-btn{
+			color:#aaa;
+		}
+	}
+}
