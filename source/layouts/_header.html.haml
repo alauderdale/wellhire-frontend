@@ -11,8 +11,21 @@
 		%i.fa.fa-sign-out.quarter-margin-right
 		Sign Out
 %nav#mainNavRightSideMenu.navmenu.navmenu-default.navmenu-fixed-right.offcanvas.side-nav{:role => "navigation"}
-	%p
-		Stuff...
+	%nav#mainRightNavSideMenu.navmenu.navmenu-default.navmenu-fixed-left.offcanvas.side-nav{:role => "navigation"}
+	%p.bold-font-name
+		Likes
+	-3.times do
+		%a.menu-thumbnail{:href=>"/like"}
+			.media
+				.pull-left
+					%img.media-object.thumb{:src => "/images/company_logo.png", :width=>"60px"}
+				.media-body
+					%p.media-heading.no-margin-bottom
+						%strong
+							Alpha Sights worldwide
+					%p
+						Designer
+
 .navbar.navbar-default.main-nav-topbar
 	.container
 		%a.main-menu-toggle.menu-toggle.topbar-btn.navbar-btn.btn.pull-left{"data-canvas" => "body", "data-target" => "#mainLeftNavSideMenu", "data-toggle" => "offcanvas", :href=>"javascript:void(0);"}

@@ -8,8 +8,6 @@
 			color:$primary-color;
 			z-index: 999;
 		}
-	}
-	p{
-		color:$primary-color!important;
+		color:tint($text-color,30%)!important;
 	}
 }
