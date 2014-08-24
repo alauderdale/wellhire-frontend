@@ -5,16 +5,21 @@
 ;;;
 
 
-
-
-
 .modal-body
 	.container
 		.row.margin-bottom
 			.col-lg-12
+				.pull-left
+					%p.no-margin-bottom.bold-font-name{:style=>"margin-top:2px;"}
+						%a.text-danger.yes-btn.margin-right{:href => "#"} 
+							%i.fa.fa-times
+							Not Interested
+						%a.text-success.no-btn{:href => "#"} 
+							%i.fa.fa-check
+							Interested
 				%button.close.pull-right{ "data-dismiss" => "modal", type: "button"} 
 					×
-	.container
+
 		.row
 			.col-lg-12
 				.text-center
