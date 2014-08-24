@@ -15,7 +15,7 @@ html {
 
 body{
   font: 100%;
-  font-size:9pt;
+  font-size:12pt;
   color: $text-color;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -25,6 +25,7 @@ body{
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   zoom:1;
+  background:#f2f2f2;
 }
 
 
