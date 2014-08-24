@@ -187,7 +187,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 h1, h2, h3, h4, h5, h6, p {
   margin:0;
-  margin-bottom:$baseline; 
+  margin-bottom:$baseline/2; 
   color:$text-color;
 }
 
@@ -212,6 +212,10 @@ h6{
 
 p,li{
   font-family:$light-font-name;
+}
+
+p{
+  margin-bottom:$baseline/2;
 }
 
 
@@ -256,6 +260,18 @@ blockquote{
   line-height:10px;
 }
 
+
+ul{
+  &.tag-skills{
+    list-style:none;
+    li{
+      float: left;
+      background:tint($text-color,90%);
+      padding:0px 10px;
+      margin:3px;
+    }
+  }
+}
 
 
 

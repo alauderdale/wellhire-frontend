@@ -1,6 +1,9 @@
 .card-picker-btn-group{
 	a{
 		font-size:$baseline*1.5;
+		&:focus{
+				outline: none;
+			}
 		&.yes-btn{
 			margin-right:$baseline;
 		}
