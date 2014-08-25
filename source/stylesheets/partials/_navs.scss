@@ -6,13 +6,14 @@
 	width:250px;
 	p,h1,h2,h3,h4,h5,h6,a{
 			color:white;
+			line-height:$baseline/1.2;
 	}
 	a{
 		&.logotype{
-			font-size:1.2em;
+			font-size:1.5em;
 			padding-bottom:$baseline/2;
 			border-bottom:1px solid rgba(255,255,255,.2);
-			font-family:$light-font-name;
+			font-family:$regular-font-name;
 			display:block;
 			color:rgba(255,255,255,.8);
 			&:hover{
@@ -32,6 +33,21 @@
 			}
 		}
 		&.menu-thumbnail{
+			.new{
+				float: right;
+				width:10px;
+				height:10px;
+				background:$green-color;
+				display:block;
+				left:5px;
+				border-radius:100px;
+				margin-bottom: -10px;
+				bottom: 38px;
+			}
+			.logo-container{
+				background:white;
+				height:41px;
+			}
 			.thumb{
 				top:3px;
 			}

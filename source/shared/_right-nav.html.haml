@@ -1,0 +1,33 @@
+%nav#mainNavRightSideMenu.navmenu.navmenu-default.navmenu-fixed-right.offcanvas.side-nav{:role => "navigation"}
+	%nav#mainRightNavSideMenu.navmenu.navmenu-default.navmenu-fixed-left.offcanvas.side-nav{:role => "navigation"}
+	.margin-bottom
+		%p.bold-font-name
+			Matches
+		-2.times do
+			%a.menu-thumbnail{:href=>"#"}
+				.media
+					.pull-left
+						.logo-container.half-margin-right
+							%img.media-object.thumb{:src => "/images/company_logo.png", :width=>"60px"}
+						.new
+					.media-body
+						%p.media-heading.no-margin-bottom
+							%strong
+								Alpha Sights
+						%p
+							Designer
+	.margin-bottom
+		%p.bold-font-name
+			Incoming Likes
+		-3.times do
+			%a.menu-thumbnail{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
+				.media
+					.pull-left
+						.logo-container.half-margin-right
+							%img.media-object.thumb{:src => "/images/company_logo.png", :width=>"60px"}
+					.media-body
+						%p.media-heading.no-margin-bottom
+							%strong
+								Alpha Sights
+						%p
+							Designer

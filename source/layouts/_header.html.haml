@@ -1,30 +1,5 @@
-%nav#mainLeftNavSideMenu.navmenu.navmenu-default.navmenu-fixed-left.offcanvas.side-nav{:role => "navigation"}
-	%a.logotype{:href=>"/home"}
-		Wellhire
-	%a.side-menu-link{:href=>"/home"}
-		%i.fa.fa-briefcase.quarter-margin-right
-		Browse Opportunities
-	%a.side-menu-link{:href=>"#"}
-		%i.fa.fa-user.quarter-margin-right
-		Profile
-	%a.side-menu-link{:href=>"/"}
-		%i.fa.fa-sign-out.quarter-margin-right
-		Sign Out
-%nav#mainNavRightSideMenu.navmenu.navmenu-default.navmenu-fixed-right.offcanvas.side-nav{:role => "navigation"}
-	%nav#mainRightNavSideMenu.navmenu.navmenu-default.navmenu-fixed-left.offcanvas.side-nav{:role => "navigation"}
-	%p.bold-font-name
-		Likes
-	-3.times do
-		%a.menu-thumbnail{:href=>"/like"}
-			.media
-				.pull-left
-					%img.media-object.thumb{:src => "/images/company_logo.png", :width=>"60px"}
-				.media-body
-					%p.media-heading.no-margin-bottom
-						%strong
-							Alpha Sights worldwide
-					%p
-						Designer
+=partial"shared/left-nav"
+=partial"shared/right-nav"
 
 .navbar.navbar-default.main-nav-topbar
 	.container
