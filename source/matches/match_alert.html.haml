@@ -1,0 +1,25 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+.modal-body
+	.container
+		.row
+			.col-lg-12
+				%p.close.pull-right{ "data-dismiss" => "modal", type: "button"}
+					×
+
+		.row
+			.col-lg-12
+				.text-center
+					=image_tag "company_logo_2.png", :class=>"img-responsive"
+					%h3
+						It's a match!
+					%div
+						%a.btn.btn-primary.half-margin-right.btn-sm{:href=>"/matches/show"}
+							Chat Now
+						%a.btn.btn-default.btn-sm{:href=>"/home"}
+							Keep Browsing

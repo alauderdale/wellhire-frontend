@@ -14,12 +14,11 @@
 						%a.text-danger.no-btn.margin-right{ "data-dismiss" => "modal", :href=>"javaScript:void(0);"} 
 							%i.fa.fa-times
 							Not Interested
-						%a.text-success.yes-btn{ "data-dismiss" => "modal", :href=>"javaScript:void(0);"} 
+						%a.text-success.yes-btn{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/matches/match_alert", "data-target"=>"#matchAlertModal"} 
 							%i.fa.fa-check
 							Interested
 				%p.close.pull-right{ "data-dismiss" => "modal", type: "button"}
 					×
-
 		.row
 			.col-lg-12
 				.text-center

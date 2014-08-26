@@ -42,7 +42,7 @@
 				left:5px;
 				border-radius:100px;
 				margin-bottom: -10px;
-				bottom: 22px;
+				bottom: 25px;
 			}
 			.logo-container{
 			}
@@ -54,6 +54,10 @@
 			padding:$baseline/2 0;
 			p{
 				margin-bottom:0;
+				line-height:15px;
+			}
+			.media-heading{
+				margin-bottom:3px;
 			}
 		}
 	}
