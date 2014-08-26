@@ -22,7 +22,7 @@
 @media (max-width: 767px) {
 
 body{
-	font-size:9pt;
+	font-size:10pt;
 	line-height: $baseline;
 }
 p{
@@ -37,10 +37,11 @@ p{
 
 //xs
 
-@media (max-width: 400px) {
+@media (max-width: 320px) {
 
 .panel .card, .item-wrapper-outer{
 		height:340px!important;
 	}
+
 
 }

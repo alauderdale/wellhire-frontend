@@ -92,8 +92,11 @@ if (typeof jQuery === 'undefined') { throw new Error('Jasny Bootstrap\'s JavaScr
       $(window).on('resize', $.proxy(this.recalc, this))
     }
     
+    // if (this.options.autohide)
+    //   $(document).on('click', $.proxy(this.autohide, this))
+
     if (this.options.autohide)
-      $(document).on('click', $.proxy(this.autohide, this))
+      $('.main').on('click', $.proxy(this.autohide, this))
 
     if (this.options.toggle) this.toggle()
     

@@ -256,7 +256,7 @@ blockquote{
 }
 
 .microtext{
-  font-size:.8rem;
+  font-size:.9rem;
   line-height:10px;
 }
 
@@ -271,6 +271,10 @@ ul{
       margin:3px;
     }
   }
+}
+
+.label-success{
+  background:$green-color;
 }
 
 
