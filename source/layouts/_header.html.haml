@@ -1,12 +1,10 @@
-=partial"shared/right-nav"
 =partial"shared/left-nav"
-
+=partial"shared/right-nav"
 
 .navbar.navbar-default.main-nav-topbar
 	.container
-		%a.main-menu-toggle.menu-toggle.topbar-btn.navbar-btn.btn.pull-left{"data-canvas" => "body", "data-target" => "#mainLeftNavSideMenu", "data-toggle" => "offcanvas", :href=>"javascript:void(0);"}
+		%a.main-menu-toggle.menu-toggle.topbar-btn.navbar-btn.btn.pull-left{"data-canvas" => "body", "data-target" => "#mainNavLeftSideMenu", "data-toggle" => "offcanvas", :href=>"javascript:void(0);"}
 			%i.fa-bars.fa.quarter-margin-right
-			menu
 		%a.menu-toggle.topbar-btn.navbar-btn.btn.pull-right{"data-canvas" => "body", "data-target" => "#mainNavRightSideMenu", "data-toggle" => "offcanvas", :href=>"javascript:void(0);"}
 			%i.fa-bell.fa
 			.label.label-info

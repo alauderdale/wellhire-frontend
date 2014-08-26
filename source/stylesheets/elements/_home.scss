@@ -41,5 +41,22 @@
 			-webkit-transform: rotate(-1deg); /* Chrome, Safari, Opera */
 			transform: rotate(-1deg);
 		}
+		.card{
+			border:1px solid #f2f2f2!important;
+			position:absolute;
+			a{
+				color:$text-color;
+				&:focus{
+					outline: none;
+				}
+			}
+			.panel-footer{
+				background-color:#fff;
+				border-top:1px solid #f2f2f2;
+			}
+			hr{
+				margin:12px 0;
+			}
+		}
 	}
 }
