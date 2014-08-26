@@ -16,10 +16,12 @@
 			.col-lg-12
 				.text-center
 					=image_tag "company_logo_2.png", :class=>"img-responsive"
-					%h3
+					%h3.no-margin-bottom
 						It's a match!
+					%p
+						You can now chat with Facebook. Facebook has been added to your match conversations. 
 					%div
 						%a.btn.btn-primary.half-margin-right.btn-sm{:href=>"/matches/show"}
 							Chat Now
-						%a.btn.btn-default.btn-sm{:href=>"/home"}
-							Keep Browsing
+						%a.btn.btn-default.btn-sm{:href=>"javaScript:void(0);",  "data-dismiss" => "modal",}
+							Later
