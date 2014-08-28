@@ -1,6 +1,9 @@
+$card-height: 390px;
+
 .card-picker-btn-group{
 	a{
 		font-size:$baseline*1.5;
+    cursor:pointer;
 		&:focus{
 				outline: none;
 			}
@@ -19,7 +22,7 @@
 //card items
 
 .item-wrapper-outer{
-	height:400px;
+	height:$card-height;
 	top:100px;
 	.card{
 		a{
@@ -49,7 +52,7 @@
   -webkit-transform: scale(1,1);
   left:50%;
   width: 250px;
-  height:400px;
+  height:$card-height;
   margin-left: -125px;
   margin-top: -150px;
   box-sizing: border-box;
@@ -80,10 +83,14 @@
 #start-card {
   color: #fff;
   background-color: $primary-color;
-  line-height: 300px;
   word-wrap: break-word;
   border: 6px solid tint($primary-color,20%);
   text-align: center;
+  p{
+    color:white;
+    margin-top:150px;
+    font-family:$bold-font-name;
+  }
 }
 
 

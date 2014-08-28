@@ -8,7 +8,8 @@
 						%pane.pane{"ng-controller" => "CardsCtrl"}
 							%swipe-cards
 								%swipe-card#start-card{"on-swipe" => "cardSwiped()"}
-									Swipe instructions
+									%p
+										Swipe left or right for a new oppertunity
 								%swipe-card{"ng-repeat" => "card in cards", "on-destroy" => "cardDestroyed($index)", "on-swipe" => "cardSwiped($index)"}
 									%div{"ng-controller" => "CardCtrl"}
 										=partial"home/card"

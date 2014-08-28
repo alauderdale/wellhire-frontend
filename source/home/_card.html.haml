@@ -1,7 +1,7 @@
 .card
 	.card-body
 		.text-center
-			=image_tag "{{card.image}}", :class=>"img-responsive"
+			=image_tag "{{card.image}}", :class=>"img-responsive half-margin-bottom"
 	.card-footer
 		.pull-left
 			%p.no-margin-bottom.bold-font-name
@@ -35,7 +35,7 @@
 				%i.fa.fa-dollar
 				%p.microtext.bold-font-name.no-margin-bottom
 					Competitive
-		.row.padding-top
+		.row.half-padding-top
 			.col-lg-12
 				.margin-auto.text-center.card-picker-btn-group
 					%a.text-danger.yes-btn{"ng-click" => "reject()"}
