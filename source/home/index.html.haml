@@ -16,15 +16,4 @@
 									%div{"ng-controller" => "CardCtrl"}
 										=partial"home/card"
 
-		.row
-			.col-md-2
-			.col-md-8
-				.margin-auto.text-center.card-picker-btn-group
-					%a.text-danger.yes-btn.btn{"ng-click" => "reject()"}
-						%i.fa.fa-times
-					%a.info-btn.btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
-						%i.fa.fa-info-circle
-					%a.text-success.no-btn.btn{"ng-click" => "accept()"}
-						%i.fa.fa-check
-				.col-md-2
-			.col-md-2
+

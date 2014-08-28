@@ -19,7 +19,7 @@
 			Recently nammed the UK's 3ed fastest growing company by Sunday Times Track 100. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of
 			%br
 		%p.text-center.no-margin-bottom
-			%a{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
+			%a.arrow{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
 				%i.fa.fa-chevron-down
 		%hr
 		.row
@@ -35,3 +35,12 @@
 				%i.fa.fa-dollar
 				%p.microtext.bold-font-name.no-margin-bottom
 					Competitive
+		.row.padding-top
+			.col-lg-12
+				.margin-auto.text-center.card-picker-btn-group
+					%a.text-danger.yes-btn{"ng-click" => "reject()"}
+						%i.fa.fa-times
+					%a.info-btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
+						%i.fa.fa-info-circle
+					%a.text-success.no-btn{"ng-click" => "accept()"}
+						%i.fa.fa-check

@@ -19,12 +19,13 @@
 //card items
 
 .item-wrapper-outer{
-	height:340px;
+	height:400px;
 	top:100px;
 	.card{
-		padding:10px;
 		a{
-			color:$text-color;
+      &.arrow{
+        color:$text-color;
+      }
 			&:focus{
 				outline: none;
 			}
@@ -42,12 +43,13 @@
 }
 
 .swipe-card {
+  padding:10px;
   display: none;
   position: absolute;
   -webkit-transform: scale(1,1);
   left:50%;
   width: 250px;
-  height: 340px;
+  height: auto;
   margin-left: -125px;
   margin-top: -150px;
   box-sizing: border-box;
