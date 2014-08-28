@@ -26,12 +26,8 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
   $rootScope.accepted = 0;
   $rootScope.rejected = 0;
   var cardTypes = [
-    { title: 'Alpha Sights', image: 'company_logo.png' },
-    { title: 'Facebook', image: 'company_logo_2.png' },
-    { title: 'Alpha Sights', image: 'company_logo.png' },
-    { title: 'Facebook', image: 'company_logo_2.png' },
-    { title: 'Alpha Sights', image: 'company_logo.png' },
-    { title: 'Facebook', image: 'company_logo_2.png' }
+    { title: 'Alpha Sights', image: 'company_logo.png', description: 'Recently nammed the UKs 3ed fastest growing company by Sunday Times Track. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of' },
+    { title: 'Facebook', image: 'company_logo_2.png', description: 'Founded in 2004, Facebook’s mission is to give people the power to share and make the world more open and connected. People use Facebook to be great' }
   ];
 
   $scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);
