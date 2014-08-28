@@ -26,11 +26,12 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.cards'])
   $rootScope.accepted = 0;
   $rootScope.rejected = 0;
   var cardTypes = [
-    { title: 'Swipe down to clear the card', image: 'img/pic.png' },
-    { title: 'Where is this?', image: 'img/pic.png' },
-    { title: 'What kind of grass is this?', image: 'img/pic2.png' },
-    { title: 'What beach is this?', image: 'img/pic3.png' },
-    { title: 'What kind of clouds are these?', image: 'img/pic4.png' }
+    { title: 'Alpha Sights', image: 'company_logo.png' },
+    { title: 'Facebook', image: 'company_logo_2.png' },
+    { title: 'Alpha Sights', image: 'company_logo.png' },
+    { title: 'Facebook', image: 'company_logo_2.png' },
+    { title: 'Alpha Sights', image: 'company_logo.png' },
+    { title: 'Facebook', image: 'company_logo_2.png' }
   ];
 
   $scope.cards = Array.prototype.slice.call(cardTypes, 0, 0);

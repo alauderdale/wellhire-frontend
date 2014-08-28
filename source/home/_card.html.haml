@@ -1,38 +1,37 @@
-.item
-	.panel.card.panel-default.no-margin-bottom
-		.pabel-body
-			.text-center
-				=image_tag "company_logo.png", :class=>"img-responsive"
-		.panel-footer
-			.pull-left
-				%p.no-margin-bottom.bold-font-name
-					Alpha Sites
-				%p.no-margin-bottom
-					Designer
-			.pull-right.text-right
-				%p.no-margin-bottom
-					Match
-				%p.no-margin-bottom
-					98%
-			.clearfix
-			%hr
+.card
+	.card-body
+		.text-center
+			=image_tag "{{card.image}}", :class=>"img-responsive"
+	.card-footer
+		.pull-left
+			%p.no-margin-bottom.bold-font-name
+				{{card.title}}
 			%p.no-margin-bottom
-				Recently nammed the UK's 3ed fastest growing company by Sunday Times Track 100. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of
-				%br
-			%p.text-center.no-margin-bottom
-				%a{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
-					%i.fa.fa-chevron-down
-			%hr
-			.row
-				.col-xs-4.text-center
-					%i.fa.fa-location-arrow
-					%p.microtext.bold-font-name.no-margin-bottom
-						New York, NY
-				.col-xs-4.text-center
-					%i.fa.fa-suitcase
-					%p.microtext.bold-font-name.no-margin-bottom
-						Full-time
-				.col-xs-4.text-center
-					%i.fa.fa-dollar
-					%p.microtext.bold-font-name.no-margin-bottom
-						Competitive
+				Designer
+		.pull-right.text-right
+			%p.no-margin-bottom
+				Match
+			%p.no-margin-bottom
+				98%
+		.clearfix
+		%hr
+		%p.no-margin-bottom
+			Recently nammed the UK's 3ed fastest growing company by Sunday Times Track 100. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of
+			%br
+		%p.text-center.no-margin-bottom
+			%a{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
+				%i.fa.fa-chevron-down
+		%hr
+		.row
+			.col-xs-4.text-center
+				%i.fa.fa-location-arrow
+				%p.microtext.bold-font-name.no-margin-bottom
+					New York, NY
+			.col-xs-4.text-center
+				%i.fa.fa-suitcase
+				%p.microtext.bold-font-name.no-margin-bottom
+					Full-time
+			.col-xs-4.text-center
+				%i.fa.fa-dollar
+				%p.microtext.bold-font-name.no-margin-bottom
+					Competitive
