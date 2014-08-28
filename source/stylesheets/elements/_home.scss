@@ -38,12 +38,14 @@ $card-height: 390px;
 		}
     img{
       height:83px;
+      z-index: 30;
     }
     .card-img-spinner{
       top: -59px;
       margin-bottom: -13px;
       text-align: center;
       display: inherit;
+      z-index: 29;
     }
 	}
 }
