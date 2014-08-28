@@ -1,10 +1,13 @@
+
+
+
 %section.no-padding-top
 	.container
 		.row
 			.col-md-2
 			.col-md-8
 				.item-wrapper-outer
-					.item-wrapper-inner
+					.item-wrapper-inner{"no-scroll" => "enabled"}
 						%pane.pane{"ng-controller" => "CardsCtrl"}
 							%swipe-cards
 								%swipe-card#start-card{"on-swipe" => "cardSwiped()"}
