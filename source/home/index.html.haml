@@ -5,19 +5,23 @@
 			.col-md-8
 				.item-wrapper-outer
 					.item-wrapper-inner
-						-3.times do
-							=partial"home/card"
-
+						%pane.pane{"ng-controller" => "CardsCtrl"}
+							%swipe-cards
+								%swipe-card#start-card{"on-swipe" => "cardSwiped()"}
+									Swipe instructions
+								%swipe-card{"ng-repeat" => "card in cards", "on-destroy" => "cardDestroyed($index)", "on-swipe" => "cardSwiped($index)"}
+									%div{"ng-controller" => "CardCtrl"}
+										=partial"home/card"
 
 		.row
 			.col-md-2
 			.col-md-8
 				.margin-auto.text-center.card-picker-btn-group
-					%a.text-danger.yes-btn.btn{:href => "#"} 
+					%a.text-danger.yes-btn.btn{"ng-click" => "reject()"}
 						%i.fa.fa-times
 					%a.info-btn.btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
 						%i.fa.fa-info-circle
-					%a.text-success.no-btn.btn{:href => "#"} 
+					%a.text-success.no-btn.btn{"ng-click" => "accept()"}
 						%i.fa.fa-check
 				.col-md-2
 			.col-md-2
