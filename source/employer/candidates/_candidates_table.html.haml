@@ -1,0 +1,55 @@
+%table#table.display.table.table-hover.margin-top.border-bottom
+	%thead
+		%tr
+			%th
+				Name
+			%th{"data-hide"=>"phone"}
+				Date Liked
+			%th{"data-hide"=>"phone"}
+				Match Score
+			%th{"data-hide"=>"phone"}
+				Actions
+			%th{"data-hide"=>"phone"}
+				Actions
+	%tbody
+		- 10.times do
+			%tr
+				%td
+					%a{:href=>"/employer/opportunities/show"}
+						UI Designer
+				%td
+					Wed Feb 26, 2014
+				%td
+					Wed Feb 26, 2014
+				%td.text-success
+					Active
+				%td
+					.btn-group
+						%a.btn.btn-xs.btn-info{:href=>"/employer/opportunities/show"} 
+							Preview 
+						%button.btn.dropdown-toggle.btn-xs.btn-info{"data-toggle" => "dropdown", type: "button"}
+							%span.caret
+							%span.sr-only Toggle Dropdown
+						%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
+							%li
+								%a{"data-toggle"=>"modal", :href=>"/employer/opportunities/edit","data-target"=>"#editOpportunityModal"}
+									Edit
+							%li
+								%a{"data-toggle"=>"modal", "data-target"=>"#markOpportunityInactiveModal"}
+									Mark as inactive
+		%tfoot.hidden
+			%tr
+				%th
+					Name
+				%th
+					Type
+				%th
+					Job Role
+				%th
+					Status
+				%th
+					Tests
+				%th
+					Date Created
+				%th
+					Actions
