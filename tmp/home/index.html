@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, maximum-scale=1.0' name='viewport' user-scalable='no'>
+    <title>
+      Wellhire
+    </title>
+    <link href="../stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='images/favicon.ico' rel='shortcut icon'>
+    <script src="../javascripts/lib/ionic.bundle.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/app.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/ionic.cards.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jquery.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/bootstrap.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jasny-bootstrap.js" type="text/javascript"></script>
+    <script src="../javascripts/scripts.js" type="text/javascript"></script>
+    <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
+    <body animation='slide-left-right-ios7' class='home home_index' ng-app='starter'>
+      <nav class='navmenu navmenu-default navmenu-fixed-left offcanvas side-nav' id='mainNavLeftSideMenu' role='navigation'>
+        <a class='logotype' href='/home'>
+          Wellhire
+        </a>
+        <a class='side-menu-link' href='/home'>
+          <i class='fa fa-briefcase quarter-margin-right'></i>
+          Browse Opportunities
+        </a>
+        <a class='side-menu-link' href='/profile'>
+          <i class='fa fa-user quarter-margin-right'></i>
+          Profile
+        </a>
+        <a class='side-menu-link' href='/preferences'>
+          <i class='fa fa-gear quarter-margin-right'></i>
+          Preferences
+        </a>
+        <a class='side-menu-link' href='/'>
+          <i class='fa fa-sign-out quarter-margin-right'></i>
+          Sign Out
+        </a>
+      </nav>
+      <nav class='navmenu navmenu-default navmenu-fixed-right offcanvas side-nav' id='mainNavRightSideMenu' role='navigation'>
+        <div class='margin-bottom'>
+          <p class='bold-font-name'>
+            Matches
+          </p>
+          <a class='menu-thumbnail' href='/matches/show'>
+            <div class='media'>
+              <div class='pull-left'>
+                <div class='logo-container half-margin-right'>
+                  <img class='media-object thumb img-thumbnail' src='/images/company_logo.png' width='60px'>
+                </div>
+                <div class='new'></div>
+              </div>
+              <div class='media-body'>
+                <p class='media-heading'>
+                  <strong>
+                    Alpha Sights
+                  </strong>
+                </p>
+                <p>
+                  How long have you been working in the...
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class='menu-thumbnail' href='/matches/show'>
+            <div class='media'>
+              <div class='pull-left'>
+                <div class='logo-container half-margin-right'>
+                  <img class='media-object thumb img-thumbnail' src='/images/company_logo_3.png' width='60px'>
+                </div>
+              </div>
+              <div class='media-body'>
+                <p class='media-heading'>
+                  <strong>
+                    BitPay
+                  </strong>
+                </p>
+                <p>
+                  Fantastic!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='margin-bottom'>
+          <p class='bold-font-name'>
+            Incoming Likes
+          </p>
+          <a class='menu-thumbnail' data-target='#showOpportunityLikeModal' data-toggle='modal' href='/likes/show'>
+            <div class='media'>
+              <div class='pull-left'>
+                <div class='logo-container half-margin-right'>
+                  <img class='media-object thumb img-thumbnail' src='/images/company_logo_2.png' width='60px'>
+                </div>
+                <div class='new'></div>
+              </div>
+              <div class='media-body'>
+                <p class='media-heading'>
+                  <strong>
+                    Facebook
+                  </strong>
+                </p>
+                <p>
+                  Designer
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <div class='navbar navbar-default main-nav-topbar'>
+        <div class='container'>
+          <a class='main-menu-toggle menu-toggle topbar-btn navbar-btn btn pull-left' data-canvas='body' data-target='#mainNavLeftSideMenu' data-toggle='offcanvas' href='javascript:void(0);'>
+            <i class='fa-bars fa quarter-margin-right'></i>
+          </a>
+          <a class='menu-toggle topbar-btn navbar-btn btn pull-right' data-canvas='body' data-target='#mainNavRightSideMenu' data-toggle='offcanvas' href='javascript:void(0);'>
+            <i class='fa-bell fa'></i>
+            <div class='label label-info'>
+              2
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- end menu -->
+      <div class='main'>
+        <!-- {"no-scroll" => ""} -->
+        <section class='no-padding-top'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-2'></div>
+              <div class='col-md-8'>
+                <div class='item-wrapper-outer'>
+                  <div class='item-wrapper-inner'>
+                    <pane class='pane' ng-controller='CardsCtrl'>
+                      <swipe-cards>
+                        <swipe-card id='start-card' on-swipe='cardSwiped()'>
+                          <p>
+                            Swipe left or right for a new opportunity
+                          </p>
+                        </swipe-card>
+                        <swipe-card ng-repeat='card in cards' on-destroy='cardDestroyed($index)' on-swipe='cardSwiped($index)'>
+                          <div ng-controller='CardCtrl'>
+                            <div class='card'>
+                              <div class='card-body'>
+                                <div class='text-center'>
+                                  <img class="img-responsive half-margin-bottom card-img" src="../images/{{card.image}}" />
+                                  <i class='fa fa-spinner fa-spin card-img-spinner'></i>
+                                </div>
+                              </div>
+                              <div class='card-footer'>
+                                <div class='pull-left'>
+                                  <p class='no-margin-bottom bold-font-name'>
+                                    {{card.title}}
+                                  </p>
+                                  <p class='no-margin-bottom'>
+                                    Designer
+                                  </p>
+                                </div>
+                                <div class='pull-right text-right'>
+                                  <p class='no-margin-bottom'>
+                                    Match
+                                  </p>
+                                  <p class='no-margin-bottom'>
+                                    98%
+                                  </p>
+                                </div>
+                                <div class='clearfix'></div>
+                                <hr>
+                                <p class='no-margin-bottom'>
+                                  {{card.description}}
+                                  <br>
+                                </p>
+                                <p class='text-center no-margin-bottom'>
+                                  <a class='arrow' data-target='#showOpportunityModal' data-toggle='modal' href='/opportunities/show'>
+                                    <i class='fa fa-chevron-down'></i>
+                                  </a>
+                                </p>
+                                <hr>
+                                <div class='row'>
+                                  <div class='col-xs-4 text-center'>
+                                    <i class='fa fa-location-arrow'></i>
+                                    <p class='microtext bold-font-name no-margin-bottom'>
+                                      New York, NY
+                                    </p>
+                                  </div>
+                                  <div class='col-xs-4 text-center'>
+                                    <i class='fa fa-suitcase'></i>
+                                    <p class='microtext bold-font-name no-margin-bottom'>
+                                      Full-time
+                                    </p>
+                                  </div>
+                                  <div class='col-xs-4 text-center'>
+                                    <i class='fa fa-dollar'></i>
+                                    <p class='microtext bold-font-name no-margin-bottom'>
+                                      Competitive
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class='row' style='padding-top:15px;'>
+                                  <div class='col-lg-12'>
+                                    <div class='margin-auto text-center card-picker-btn-group'>
+                                      <a class='text-danger yes-btn' ng-click='reject()'>
+                                        <i class='fa fa-times'></i>
+                                      </a>
+                                      <a class='info-btn' data-target='#showOpportunityModal' data-toggle='modal' href='/opportunities/show'>
+                                        <i class='fa fa-info-circle'></i>
+                                      </a>
+                                      <a class='text-success no-btn' ng-click='accept()'>
+                                        <i class='fa fa-check'></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </swipe-card>
+                      </swipe-cards>
+                    </pane>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end main content -->
+      <div aria-hidden='true' class='modal full-page-modal' id='showOpportunityModal' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+          <div class='modal-content'></div>
+        </div>
+      </div>
+      <div aria-hidden='true' class='modal full-page-modal' id='showOpportunityLikeModal' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+          <div class='modal-content'></div>
+        </div>
+      </div>
+      <div aria-hidden='true' class='modal modal-sm' id='matchAlertModal' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+          <div class='modal-content'></div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>

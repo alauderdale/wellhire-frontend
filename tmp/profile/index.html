@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, maximum-scale=1.0' name='viewport' user-scalable='no'>
+    <title>
+      Wellhire
+    </title>
+    <link href="../stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href='images/favicon.ico' rel='shortcut icon'>
+    <script src="../javascripts/lib/ionic.bundle.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/app.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/ionic.cards.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jquery.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/bootstrap.js" type="text/javascript"></script>
+    <script src="../javascripts/lib/jasny-bootstrap.js" type="text/javascript"></script>
+    <script src="../javascripts/scripts.js" type="text/javascript"></script>
+    <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
+    <body animation='slide-left-right-ios7' class='profile profile_index' ng-app='starter'>
+      <nav class='navmenu navmenu-default navmenu-fixed-left offcanvas side-nav' id='mainNavLeftSideMenu' role='navigation'>
+        <a class='logotype' href='/home'>
+          Wellhire
+        </a>
+        <a class='side-menu-link' href='/home'>
+          <i class='fa fa-briefcase quarter-margin-right'></i>
+          Browse Opportunities
+        </a>
+        <a class='side-menu-link' href='/profile'>
+          <i class='fa fa-user quarter-margin-right'></i>
+          Profile
+        </a>
+        <a class='side-menu-link' href='/preferences'>
+          <i class='fa fa-gear quarter-margin-right'></i>
+          Preferences
+        </a>
+        <a class='side-menu-link' href='/'>
+          <i class='fa fa-sign-out quarter-margin-right'></i>
+          Sign Out
+        </a>
+      </nav>
+      <nav class='navmenu navmenu-default navmenu-fixed-right offcanvas side-nav' id='mainNavRightSideMenu' role='navigation'>
+        <div class='margin-bottom'>
+          <p class='bold-font-name'>
+            Matches
+          </p>
+          <a class='menu-thumbnail' href='/matches/show'>
+            <div class='media'>
+              <div class='pull-left'>
+                <div class='logo-container half-margin-right'>
+                  <img class='media-object thumb img-thumbnail' src='/images/company_logo.png' width='60px'>
+                </div>
+                <div class='new'></div>
+              </div>
+              <div class='media-body'>
+                <p class='media-heading'>
+                  <strong>
+                    Alpha Sights
+                  </strong>
+                </p>
+                <p>
+                  How long have you been working in the...
+                </p>
+              </div>
+            </div>
+          </a>
+          <a class='menu-thumbnail' href='/matches/show'>
+            <div class='media'>
+              <div class='pull-left'>
+                <div class='logo-container half-margin-right'>
+                  <img class='media-object thumb img-thumbnail' src='/images/company_logo_3.png' width='60px'>
+                </div>
+              </div>
+              <div class='media-body'>
+                <p class='media-heading'>
+                  <strong>
+                    BitPay
+                  </strong>
+                </p>
+                <p>
+                  Fantastic!
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class='margin-bottom'>
+          <p class='bold-font-name'>
+            Incoming Likes
+          </p>
+          <a class='menu-thumbnail' data-target='#showOpportunityLikeModal' data-toggle='modal' href='/likes/show'>
+            <div class='media'>
+              <div class='pull-left'>
+                <div class='logo-container half-margin-right'>
+                  <img class='media-object thumb img-thumbnail' src='/images/company_logo_2.png' width='60px'>
+                </div>
+                <div class='new'></div>
+              </div>
+              <div class='media-body'>
+                <p class='media-heading'>
+                  <strong>
+                    Facebook
+                  </strong>
+                </p>
+                <p>
+                  Designer
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <div class='navbar navbar-default main-nav-topbar'>
+        <div class='container'>
+          <a class='main-menu-toggle menu-toggle topbar-btn navbar-btn btn pull-left' data-canvas='body' data-target='#mainNavLeftSideMenu' data-toggle='offcanvas' href='javascript:void(0);'>
+            <i class='fa-bars fa quarter-margin-right'></i>
+          </a>
+          <a class='menu-toggle topbar-btn navbar-btn btn pull-right' data-canvas='body' data-target='#mainNavRightSideMenu' data-toggle='offcanvas' href='javascript:void(0);'>
+            <i class='fa-bell fa'></i>
+            <div class='label label-info'>
+              2
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- end menu -->
+      <div class='main'>
+        <section class='no-padding-top'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-md-2'></div>
+              <div class='col-md-8'>
+                <div class='panel profile'>
+                  <div class='panel-header padding-top padding-bottom'>
+                    <div class='text-center'>
+                      <img class="img-circle profile-img half-margin-bottom img-thumbnail" src="../images/avatar.jpg" />
+                      <p class='no-margin-bottom bold-font-name'>
+                        Bill Murry
+                      </p>
+                      <p class='no-margin-bottom'>
+                        Actor
+                      </p>
+                    </div>
+                  </div>
+                  <div class='panel-body'>
+                    <p class='extra-bold-font-name'>
+                      Summary
+                    </p>
+                    <p>
+                      qui autem soluta totam. sed et consectetur hic nobis aut in quod
+                    </p>
+                    <hr>
+                    <p class='extra-bold-font-name'>
+                      Job Skills
+                    </p>
+                    <div class='tag-labels'></div>
+                    <ul class='tag-skills'>
+                      <li>
+                        UX design
+                      </li>
+                      <li>
+                        Graphic design
+                      </li>
+                      <li>
+                        Visual communication
+                      </li>
+                      <li>
+                        UI interface skills
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class='col-md-2'></div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end main content -->
+      <div aria-hidden='true' class='modal full-page-modal' id='showOpportunityModal' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+          <div class='modal-content'></div>
+        </div>
+      </div>
+      <div aria-hidden='true' class='modal full-page-modal' id='showOpportunityLikeModal' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+          <div class='modal-content'></div>
+        </div>
+      </div>
+      <div aria-hidden='true' class='modal modal-sm' id='matchAlertModal' role='dialog'>
+        <div class='modal-dialog modal-lg'>
+          <div class='modal-content'></div>
+        </div>
+      </div>
+    </body>
+  </head>
+</html>
