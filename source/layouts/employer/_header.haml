@@ -1,0 +1,42 @@
+%nav.navbar.navbar-default.navbar-fixed-top.main-nav{role: "navigation"}
+  / Brand and toggle get grouped for better mobile display
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "/employer"}
+        .logo
+    / Collect the nav links, forms, and other content for toggling
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-left
+        %li{:class => (current_page.data.activeclass === "candidates") ? "active" : ""}
+          %a.navbar-item{href: "/employer/candidates"} 
+            %i.fa.fa-users
+            Candidates
+        %li{:class => (current_page.data.activeclass === "opportunities") ? "active" : ""}
+          %a.navbar-item{:href=>"/employer/opportunities"}
+            %i.fa.fa-clipboard
+            My Opportunities
+        %li{:class => (current_page.data.activeclass === "inbox") ? "active" : ""}
+          %a.navbar-item{href: "/employer/inbox"} 
+            %i.fa.fa-inbox
+            Inbox
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.btn.btn-default{"data-toggle"=>"modal", :href=>"/employer/opportunities/new", "data-target"=>"#newOpportunityModal"}
+            %i.fa.fa-plus-circle
+            New Opportunity
+        %li.dropdown
+          %a.dropdown-toggle.navbar-item{"data-toggle" => "dropdown", href: "#"}
+            = image_tag ("no_avatar_sm.png"), :class=>"img-circle avatar-sm quarter-margin-right pull-left"
+            %span.hidden-md.hidden-sm
+              john@doe.com
+            %b.caret
+          %ul.dropdown-menu
+            %li
+              %a{href: "/"} My Account
+            %li
+              %a{href: "/employer/account/login"} Sign Out

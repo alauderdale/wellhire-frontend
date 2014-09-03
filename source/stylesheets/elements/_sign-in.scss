@@ -2,3 +2,7 @@ body.index{
 	background:no-repeat center center fixed $primary-color url(../images/login/login_bg.png);
 	background-size:cover;
 }
+
+ body.employer_account_new, body.employer_account_login{
+	background:shade($primary-color,20%);
+}

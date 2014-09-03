@@ -1,0 +1,73 @@
+//buttons
+
+.btn{
+  text-decoration:none;
+  font-family:$medium-font-name;
+  font-size:1em;
+  letter-spacing:.5px;
+  color:white!important;
+  &.btn-primary{
+    background-color:$secondary-color!important;
+    border-color:shade($secondary-color,20%)!important;
+    &:hover{
+      border-color:shade($secondary-color,20%)!important;
+      background-color:shade($secondary-color,20%)!important;
+    }
+  }
+  &.btn-default{
+    background-color:$primary-color;
+    border-color:$primary-color;
+    &:hover{
+      border-color:$primary-color;
+      background-color:shade($primary-color,20%)!important;
+    }
+  }
+  &.btn-wire{
+    color:white!important;
+    border:1px solid rgba(255,255,255,.5)!important;
+    background-color:transparent!important;
+    &:hover{
+      border-color:white!important;
+    }
+  }
+  &.btn-info{
+    color:black!important;
+    border:1px solid shade($gray-color,10%)!important;
+    background-color:tint($gray-color,50%) !important;
+    &:focus{
+      outline:none;
+    }
+  }
+}
+
+.btn-xl{
+  padding:$baseline $baseline*2;
+}
+
+.test-toggle-btn{
+  .btn-icon{
+    &:after{
+      width:10px;
+      content:"+";
+    }
+  }
+  &.active{
+    background-color:tint($primary-color,90%)!important;
+    .btn-icon{
+      width:20px;
+      &:after{
+        content:"✓";
+      }
+    }
+  }
+}
+
+a{
+  &:hover{
+    text-decoration:none;
+  }
+  &:focus{
+    text-decoration:none;
+    outline: none!important;
+  }
+}
