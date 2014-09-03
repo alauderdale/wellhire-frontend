@@ -1,0 +1,46 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+
+.modal-content
+	.modal-header
+		%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+		%h2.modal-title 
+			Edit Job Opportunity
+	.modal-body
+		%form{role: "form"}
+			.form-group
+				%label.control-label 
+					Title
+				%input.form-control{value: "UX designer"}
+			.form-group
+				%label.control-label 
+					Location
+				%input.form-control{value: "San Francisco, CA"}
+			.form-group
+				%label.control-label 
+					Required Skills (Separate by comma)
+				%input.form-control{value: "Wireframes, Photoshop"}
+			.form-group
+				%label.control-label
+					Opportunity Description
+				%textarea.form-control{:rows=>"6"}
+					Description and such
+			.form-group
+				%label.control-label
+					Team Description
+				%textarea.form-control{:rows=>"6"}
+					Description and such
+
+
+	.modal-footer
+		%button.btn-link.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+			Cancel
+		%button.btn.btn-default{"data-dismiss" => "modal", type: "button"} 
+			%i.fa.fa-check
+			Save Changes

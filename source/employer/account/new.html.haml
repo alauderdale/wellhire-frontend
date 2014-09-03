@@ -1,0 +1,61 @@
+;;;
+"layout": "login",
+"title": "Welcome"
+;;;
+
+%section
+	.container
+		.col-sm-3
+		.col-sm-6
+			.panel.panel-default.login-panel
+				.panel-heading
+					.text-center.margin-top
+						=image_tag '/images/logo_white.png', :width=>"150px", :class=>"half-margin-bottom"
+					.clearfix
+						%h2.text-center.bold-font-name.no-margin-bottom
+							Employer portal
+				.panel-body
+					%p.text-center.quarter-margin-top.bold-font-name{:style=>"line-height:18px;"}
+						Already have an account?
+						%a{:href=>"/employer/account/login"}
+							Sign in
+					%form
+						.margin-bottom
+							.form-group
+								%label
+									Email
+								%input.form-control.input-lg{:placeholder => "ex: john@doe.com", :type => "password"}
+							.form-group
+								%label
+									Email
+								%input.form-control.input-lg{:placeholder => "ex: john@doe.com", :type => "password"}
+							.form-group
+								%label
+									Email
+								%input.form-control.input-lg{:placeholder => "ex: john@doe.com", :type => "password"}
+							.form-group
+								%label
+									Email
+								%input.form-control.input-lg{:placeholder => "ex: john@doe.com", :type => "password"}
+							.form-group
+								%label
+									Email
+								%input.form-control.input-lg{:placeholder => "ex: john@doe.com", :type => "password"}
+							.form-group
+								%label
+									Company Logo
+								.clearfix
+								.fileinput.fileinput-new{"data-provides" => "fileinput"}
+									%span.btn.btn-default.btn-file
+										%span.fileinput-new Select file
+										%span.fileinput-exists Change
+										%input{:name => "...", :type => "file"}/
+									%span.fileinput-filename
+									%a.close.fileinput-exists{"data-dismiss" => "fileinput", :href => "#", :style => "float: none"} ×
+					%a.btn.btn-primary.btn-block.btn-lg{:href=>"/employer"}
+						Create Account
+			.text-center
+				%h3
+					%a{:href=>"/", :style=>"color:white; text-decoration:underline;"}
+						Im a candidate
+		.col-sm-3

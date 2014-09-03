@@ -1,0 +1,56 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+
+.modal-content
+	.modal-header
+		%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+		%h2.modal-title 
+			New Job Opportunity
+	.modal-body
+		/ .alert.alert-danger
+		/ 	%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
+		/ 		&times;
+		/ 	%strong
+		/ 		Opps!
+		/ 	Please correct the following errors:
+		/ 	%br
+		/ 	%small
+		/ 		• Enter a first name
+		/ 	%br
+		/ 	%small
+		/ 		• Enter a last name
+		%form{role: "form"}
+			.form-group
+				%label.control-label 
+					Title
+				%input.form-control{placeholder: "Ex: UX designer"}
+			.form-group
+				%label.control-label 
+					Location
+				%input.form-control{placeholder: "Ex: San Francisco, CA"}
+			.form-group
+				%label.control-label 
+					Required Skills (Separate by comma)
+				%input.form-control{placeholder: "Ex: Wireframes, Photoshop"}
+			.form-group
+				%label.control-label
+					Opportunity Description
+				%textarea.form-control{:rows=>"6",placeholder: "Quick description of the opportunity (less than 250 words)"}
+			.form-group
+				%label.control-label
+					Team Description
+				%textarea.form-control{:rows=>"6",placeholder: "What is it like to work on your team? (less than 250 words)"}
+
+
+	.modal-footer
+		%button.btn-link.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
+			Cancel
+		%button.btn.btn-default{"data-dismiss" => "modal", type: "button"} 
+			%i.fa.fa-plus-circle
+			Create Opportunity

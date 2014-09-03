@@ -1,0 +1,95 @@
+//header
+
+.navbar.main-nav{
+  background-color:shade($primary-color,50%);
+  border-bottom:none;
+  ul.navbar-nav{
+    ul{
+      &.dropdown-menu{
+        background-color:$primary-color;
+        padding:0;
+        margin:0;
+        border-radius:0;
+        li{
+          padding:0;
+          margin:0;
+          a{
+            color:white;
+            padding:$baseline/1.5 $baseline;
+            &:hover{
+              background-color:tint($primary-color,20%);
+            }
+          }
+        }
+      }
+    }
+    li{
+      &.active{
+        a{
+          i{
+            color:$primary-color;
+          }
+          &.navbar-item{
+            color:white;
+            background-color:shade($primary-color,60%);
+          }
+          &:hover{
+            background-color:shade($primary-color,60%);
+            color:$primary-color;
+          }
+        }
+      }
+      a{
+        text-decoration:none;
+        @include transition-duration(.3s);
+        &.navbar-item{
+          background:transparent;
+          color:shade(white,10%);
+          padding:$baseline $baseline/1.9;
+          font-size:1em;
+          &:hover , &:focus{
+            color:white;
+            background-color:shade($primary-color,60%);
+          }
+        }
+      }
+    }
+  }
+  .btn{
+    padding:$baseline/2!important;
+    margin:$baseline/2;
+    font-size:1em;
+    &.btn-default{
+      &:hover{
+        background-color:tint($primary-color,20%)!important;
+      }
+      &:focus{
+        background-color:$primary-color;
+        outline: none;
+      }
+    }
+  }
+  img.avatar-sm{
+    margin-top:-5px;
+    width: 32px;
+    height:32px;
+  }
+}
+
+.logo{
+  background:url(../images/logo_white.png) no-repeat 100%;
+  width: 124px;
+  height:25px;
+  background-size:100%;
+  margin-top:3px;
+  z-index: 99;
+}
+
+.logo-sm{
+  background:url(../images/logo_sm.png) no-repeat 100%;
+  width: 42px;
+  height:22px;
+  background-size:100%;
+  position:relative;
+  top:7px;
+}

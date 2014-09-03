@@ -1,0 +1,31 @@
+//modals
+
+.modal{
+  .close{
+    z-index: 99;
+  }
+  .modal-header{
+    background-color:#fafafa;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    h1{
+      color:shade($primary-color,30%);
+    }
+  }
+  .modal-footer{
+    background-color:#fafafa;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+  }
+  &.modal-scroll{
+    .modal-body{
+      max-height:600px;
+      overflow:scroll;
+    }
+  }
+}
+
+.modal-icon{
+  font-size:4em;
+  position:relative;
+}

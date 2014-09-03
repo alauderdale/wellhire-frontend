@@ -1,0 +1,11 @@
+<!doctype html>
+%html
+  %head
+    = partial "shared/employer_scripts"
+  %body{:class => page_classes}
+    = partial "layouts/employer/header"
+    /end menu
+    = yield
+    /end main content
+    = partial "layouts/employer/footer"
+    /end footer

@@ -1,0 +1,18 @@
+table{
+  //specific classes for the dynamic tables 
+  &.table{
+    ul.dropdown-menu{
+      left:-85px!important;
+    }
+    th{
+      text-transform:uppercase;
+      font-family:$light-font-name;
+      background-color:tint($primary-color,90%)!important;
+      border-right:1px solid $gray-color;
+      color:$primary-color;
+      &:last-of-type{
+        border-right:none;
+      }
+    }
+  }
+}
