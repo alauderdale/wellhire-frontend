@@ -1,6 +1,9 @@
 %table#table.display.table.table-hover.margin-top.border-bottom
 	%thead
 		%tr
+			%th.bs-checkbox
+			%th
+				.fa.fa-heart
 			%th
 				Name
 			%th{"data-hide"=>"phone"}
@@ -9,34 +12,142 @@
 				Match Score
 			%th{"data-hide"=>"phone"}
 				Actions
-			%th{"data-hide"=>"phone"}
-				Actions
 	%tbody
-		- 10.times do
+		%tr
+			%td.bs-checkbox
+			%td
+				.fa.fa-heart-o
+			%td
+				%a{:href=>"/employer/candidates/show"}
+					Matt Fiedler
+			%td
+			%td.text-success
+				96%
+			%td
+				.fa.fa-thumbs-up.margin-right
+				.fa.fa-thumbs-o-down
+		%tr
+			%td.bs-checkbox
+			%td
+				.fa.fa-heart
+			%td
+				%a{:href=>"/employer/candidates/show"}
+					Alex Lauderdale
+			%td
+				5/13/2014
+			%td.text-success
+				92%
+			%td
+				.fa.fa-thumbs-up.margin-right
+				.fa.fa-thumbs-o-down
 			%tr
+				%td.bs-checkbox
 				%td
-					%a{:href=>"/employer/opportunities/show"}
-						UI Designer
+					.fa.fa-heart-o
 				%td
-					Wed Feb 26, 2014
+					%a{:href=>"/employer/candidates/show"}
+						Ethan Martin
 				%td
-					Wed Feb 26, 2014
 				%td.text-success
-					Active
+					90%
 				%td
-					.btn-group
-						%a.btn.btn-xs.btn-info{:href=>"/employer/opportunities/show"} 
-							Preview 
-						%button.btn.dropdown-toggle.btn-xs.btn-info{"data-toggle" => "dropdown", type: "button"}
-							%span.caret
-							%span.sr-only Toggle Dropdown
-						%ul.dropdown-menu.dropdown-menu-right{role: "menu"}
-							%li
-								%a{"data-toggle"=>"modal", :href=>"/employer/opportunities/edit","data-target"=>"#editOpportunityModal"}
-									Edit
-							%li
-								%a{"data-toggle"=>"modal", "data-target"=>"#markOpportunityInactiveModal"}
-									Mark as inactive
+					.fa.fa-thumbs-up.margin-right
+					.fa.fa-thumbs-o-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart-o
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+				%td.text-success
+					85%
+				%td
+					.fa.fa-thumbs-up.margin-right
+					.fa.fa-thumbs-o-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+					6/6/2014
+				%td.text-success
+					82%
+				%td
+					.fa.fa-thumbs-up.margin-right
+					.fa.fa-thumbs-o-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart-o
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+				%td
+					73%
+				%td
+					.fa.fa-thumbs-o-up.margin-right
+					.fa.fa-thumbs-o-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+					5/23/2014
+				%td
+					65%
+				%td
+					.fa.fa-thumbs-o-up.margin-right
+					.fa.fa-thumbs-o-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart-o
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+				%td
+					55%
+				%td
+					.fa.fa-thumbs-o-up.margin-right
+					.fa.fa-thumbs-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+					5/12/2014
+				%td
+					43%
+				%td
+					.fa.fa-thumbs-o-up.margin-right
+					.fa.fa-thumbs-down
+			%tr
+				%td.bs-checkbox
+				%td
+					.fa.fa-heart-o
+				%td
+					%a{:href=>"/employer/candidates/show"}
+						First Name Last Name
+				%td
+				%td
+					35%
+				%td
+					.fa.fa-thumbs-o-up.margin-right
+					.fa.fa-thumbs-down
+
 		%tfoot.hidden
 			%tr
 				%th

@@ -13,20 +13,52 @@
 					%h1.main-page-header
 						%span.half-margin-right
 							%small
-								%i.fa.fa-clipboard
+								%i.fa.fa-users 
 						Candidates
 				%p.margin-bottom
 					Etiam sussapien tempus. Praesent iaculis porttitor pharetra. Cras tristique sapien id condimentum consequat. Donec iaculis non arcu at tincidunt. Curabitur eget dictum orci, sed volutpat urna.
 		.row.margin-bottom
 			.col-lg-12
 				%p.no-margin-bottom
-					%a.btn.btn-default.btn-lg{"data-toggle"=>"modal", :href=>"/employer/opportunities/new", "data-target"=>"#newOpportunityModal"}
-						%i.fa.fa-plus-circle
-						Create Opportunity
-					%a.btn.btn-primary.btn-lg{:href=>"#"}
-						%i.fa.fa-plus-circle
-						Import
-			
+					.btn-group
+						%button.btn.btn-default{type: "button"}
+							Opportunity
+						%button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+							%span.caret
+							%span.sr-only
+								Toggle Dropdown
+						%ul.dropdown-menu{role: "menu"}
+							%li
+								%a{:href=>"#"}
+									Opportunity 1
+							%li
+								%a{:href=>"#"}
+									Opportunity 2
+							%li
+								%a{:href=>"#"}
+									Opportunity 3
+							%li
+								%a{:href=>"#"}
+									Opportunity 4
+					.btn-group
+						%button.btn.btn-default{type: "button"}
+							Bulk Actions
+						%button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
+							%span.caret
+							%span.sr-only
+								Toggle Dropdown
+						%ul.dropdown-menu{role: "menu"}
+							%li
+								%a{:href=>"#"}
+									Like
+							%li
+								%a{:href=>"#"}
+									Dislike
+					%form.navbar-form.navbar-right.no-margin-top{role: "search"}
+						.form-group
+							%input.form-control{type:"text", placeholder:"search"}
+						%button.btn{type:"submit"}
+							Submit
 		.row
 			.col-lg-12
 				=partial "/employer/candidates/candidates_table"
