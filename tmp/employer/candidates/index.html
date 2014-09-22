@@ -38,7 +38,7 @@
             <li class='active'>
               <a class='navbar-item' href='/employer/candidates'>
                 <i class='fa fa-users'></i>
-                Candidates
+                Candidate Manager
               </a>
             </li>
             <li class=''>
@@ -83,7 +83,348 @@
       </div>
     </nav>
     <!-- end menu -->
-    
+    <section>
+      <div class='container'>
+        <div class='row'>
+          <div class='col-lg-12'>
+            <div class='page-header'>
+              <h1 class='main-page-header'>
+                <span class='half-margin-right'>
+                  <small>
+                    <i class='fa fa-users'></i>
+                  </small>
+                </span>
+                Candidate Manager
+              </h1>
+            </div>
+            <p class='margin-bottom'>
+              Select an opportunity below to see candidates that have liked your posting. Click on their names to view their profiles and start a conversation.
+            </p>
+          </div>
+        </div>
+        <div class='row margin-bottom'>
+          <div class='col-lg-12'>
+            <p class='no-margin-bottom'>
+              <div class='btn-group'>
+                <button class='btn btn-default' type='button'>
+                  Opportunity
+                </button>
+                <button class='btn btn-default dropdown-toggle' data-toggle='dropdown' type='button'>
+                  <span class='caret'></span>
+                  <span class='sr-only'>
+                    Toggle Dropdown
+                  </span>
+                </button>
+                <ul class='dropdown-menu' role='menu'>
+                  <li>
+                    <a href='#'>
+                      Opportunity 1
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Opportunity 2
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Opportunity 3
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Opportunity 4
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class='btn-group'>
+                <button class='btn btn-default' type='button'>
+                  Bulk Actions
+                </button>
+                <button class='btn btn-default dropdown-toggle' data-toggle='dropdown' type='button'>
+                  <span class='caret'></span>
+                  <span class='sr-only'>
+                    Toggle Dropdown
+                  </span>
+                </button>
+                <ul class='dropdown-menu' role='menu'>
+                  <li>
+                    <a href='#'>
+                      Like
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Dislike
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <form class='navbar-form navbar-right no-margin-top' role='search'>
+                <div class='form-group'>
+                  <input class='form-control' placeholder='search' type='text'>
+                </div>
+                <button class='btn' type='submit'>
+                  Submit
+                </button>
+              </form>
+            </p>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12'>
+            <table class='display table table-hover margin-top border-bottom' id='table'>
+              <thead>
+                <tr>
+                  <th class='bs-checkbox'></th>
+                  <th>
+                    <div class='fa fa-heart'></div>
+                  </th>
+                  <th>
+                    Name
+                  </th>
+                  <th data-hide='phone'>
+                    Date Liked
+                  </th>
+                  <th data-hide='phone'>
+                    Match Score
+                  </th>
+                  <th data-hide='phone'>
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class='bs-checkbox'></td>
+                  <td>
+                    <div class='fa fa-heart-o'></div>
+                  </td>
+                  <td>
+                    <a href='/employer/candidates/show'>
+                      Matt Fiedler
+                    </a>
+                  </td>
+                  <td></td>
+                  <td class='text-success'>
+                    96%
+                  </td>
+                  <td>
+                    <div class='fa fa-thumbs-up margin-right'></div>
+                    <div class='fa fa-thumbs-o-down'></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class='bs-checkbox'></td>
+                  <td>
+                    <div class='fa fa-heart'></div>
+                  </td>
+                  <td>
+                    <a href='/employer/candidates/show'>
+                      Alex Lauderdale
+                    </a>
+                  </td>
+                  <td>
+                    5/13/2014
+                  </td>
+                  <td class='text-success'>
+                    92%
+                  </td>
+                  <td>
+                    <div class='fa fa-thumbs-up margin-right'></div>
+                    <div class='fa fa-thumbs-o-down'></div>
+                  </td>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart-o'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        Ethan Martin
+                      </a>
+                    </td>
+                    <td></td>
+                    <td class='text-success'>
+                      90%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-up margin-right'></div>
+                      <div class='fa fa-thumbs-o-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart-o'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td></td>
+                    <td class='text-success'>
+                      85%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-up margin-right'></div>
+                      <div class='fa fa-thumbs-o-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td>
+                      6/6/2014
+                    </td>
+                    <td class='text-success'>
+                      82%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-up margin-right'></div>
+                      <div class='fa fa-thumbs-o-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart-o'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td></td>
+                    <td>
+                      73%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-o-up margin-right'></div>
+                      <div class='fa fa-thumbs-o-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td>
+                      5/23/2014
+                    </td>
+                    <td>
+                      65%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-o-up margin-right'></div>
+                      <div class='fa fa-thumbs-o-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart-o'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td></td>
+                    <td>
+                      55%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-o-up margin-right'></div>
+                      <div class='fa fa-thumbs-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td>
+                      5/12/2014
+                    </td>
+                    <td>
+                      43%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-o-up margin-right'></div>
+                      <div class='fa fa-thumbs-down'></div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class='bs-checkbox'></td>
+                    <td>
+                      <div class='fa fa-heart-o'></div>
+                    </td>
+                    <td>
+                      <a href='/employer/candidates/show'>
+                        First Name Last Name
+                      </a>
+                    </td>
+                    <td></td>
+                    <td>
+                      35%
+                    </td>
+                    <td>
+                      <div class='fa fa-thumbs-o-up margin-right'></div>
+                      <div class='fa fa-thumbs-down'></div>
+                    </td>
+                  </tr>
+                </tr>
+                <tfoot class='hidden'>
+                  <tr>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Type
+                    </th>
+                    <th>
+                      Job Role
+                    </th>
+                    <th>
+                      Status
+                    </th>
+                    <th>
+                      Tests
+                    </th>
+                    <th>
+                      Date Created
+                    </th>
+                    <th>
+                      Actions
+                    </th>
+                  </tr>
+                </tfoot>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- end main content -->
     <section class='no-padding-top'>
       <footer>
