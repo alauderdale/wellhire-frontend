@@ -7,7 +7,7 @@
 			$('.dislike').removeClass('active');
 
 
-			$('.card').addClass('animate-like-remove');
+			$('.card').addClass('animate-like-remove').fadeOut(200);
 			$('.like').addClass('active');
 
 		});
@@ -16,7 +16,7 @@
 			$('.card').removeClass('animate-like-remove');
 			$('.like').removeClass('active');
 
-			$('.card').addClass('animate-dislike-remove');
+			$('.card').addClass('animate-dislike-remove').fadeOut(200);
 			$('.dislike').addClass('active');
 		});
 
