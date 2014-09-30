@@ -1,12 +1,11 @@
 .card
 	.card-body
 		.text-center
-			=image_tag "{{card.image}}", :class=>"img-responsive half-margin-bottom card-img"
-			%i.fa.fa-spinner.fa-spin.card-img-spinner
+			=image_tag "company_logo_2.png", :class=>"img-responsive half-margin-bottom card-img"
 	.card-footer
 		.pull-left
 			%p.no-margin-bottom.bold-font-name
-				{{card.title}}
+				Alpha Sites
 			%p.no-margin-bottom
 				Designer
 		.pull-right.text-right
@@ -15,14 +14,14 @@
 			%p.no-margin-bottom
 				98%
 		.clearfix
-		%hr
+		%hr.quarter-margin-top.quarter-margin-bottom
 		%p.no-margin-bottom
-			{{card.description}}
+			Recently nammed the UKs 3ed fastest growing company by Sunday Times Track. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of                        
 			%br
 		%p.text-center.no-margin-bottom
 			%a.arrow{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
 				%i.fa.fa-chevron-down
-		%hr
+		%hr.quarter-margin-top.quarter-margin-bottom
 		.row
 			.col-xs-4.text-center
 				%i.fa.fa-location-arrow
@@ -39,9 +38,9 @@
 		.row{:style=>"padding-top:15px;"}
 			.col-lg-12
 				.margin-auto.text-center.card-picker-btn-group
-					%a.text-danger.yes-btn{"ng-click" => "reject()"}
+					%a.text-danger.yes-btn
 						%i.fa.fa-times
 					%a.info-btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
 						%i.fa.fa-info-circle
-					%a.text-success.no-btn{"ng-click" => "accept()"}
+					%a.text-success.no-btn
 						%i.fa.fa-check

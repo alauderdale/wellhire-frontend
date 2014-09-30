@@ -19,107 +19,20 @@ $card-height: 390px;
 	}
 }
 
-//card items
-
-.item-wrapper-outer{
-	height:$card-height;
-	top:100px;
-	.card{
-		a{
-      &.arrow{
+.card-wrapper-outer{
+  .card-wrapper-inner{
+    .card{
+      background-color:white;
+      .card-body{
+      }
+      .card-footer{
+        padding:$baseline;
+        padding-top:0;
+        padding-bottom:$baseline/2;
+      }
+      .arrow{
         color:$text-color;
       }
-			&:focus{
-				outline: none;
-			}
-		}
-		hr{
-			margin:12px 0;
-		}
-    img{
-      height:83px;
-      z-index: 30;
     }
-    .card-img-spinner{
-      top: -59px;
-      margin-bottom: -13px;
-      text-align: center;
-      display: inherit;
-      z-index: 29;
-    }
-	}
-}
-
-
-.swipe-cards {
-  width:100%;
-  top:50px;
-}
-
-.swipe-card {
-  padding:10px;
-  display: none;
-  position: absolute;
-  -webkit-transform: scale(1,1);
-  left:50%;
-  width: 270px;
-  height:$card-height;
-  margin-left: -135px;
-  margin-top: -150px;
-  box-sizing: border-box;
-  background-color: rgb(255,255,255);
-  border-radius: 4px;
-  overflow: hidden;
-  -webkit-animation-fill-mode: forwards;
-}
-
-.swipe-card .title {
-  height: 40px;
-  padding: 5px;
-  line-height: 30px;
-  color: #444;
-}
-.swipe-card .image {
-  overflow: hidden;
-  max-height: 210px;
-}
-.swipe-card .button {
-  border: none;
-}
-.swipe-card .image img {
-  width: 100%;
-  border-radius: 0px 0px 4px 4px;
-}
-
-#start-card {
-  color: #fff;
-  background-color: $primary-color;
-  word-wrap: break-word;
-  border: 6px solid tint($primary-color,20%);
-  text-align: center;
-  p{
-    color:white;
-    margin-top:150px;
-    font-family:$bold-font-name;
   }
-}
-
-
-@-webkit-keyframes bounceIn {
-  0% {
-    -webkit-transform: scale(0,0);
-  }
-  70% {
-    -webkit-transform: scale(1.2,1.2);
-  }
-  100% {
-    -webkit-transform: scale(1,1);
-  }
-}
-
-.swipe-card.pop-in-start {
-  -webkit-transform: scale(0,0);
-}
-.swipe-card.pop-in {
-  -webkit-animation: bounceIn 0.4s ease-out;
 }

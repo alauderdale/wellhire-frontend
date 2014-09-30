@@ -4,15 +4,8 @@
 		.row
 			.col-md-2
 			.col-md-8
-				.item-wrapper-outer
-					.item-wrapper-inner
-						%pane.pane{"ng-controller" => "CardsCtrl"}
-							%swipe-cards
-								%swipe-card#start-card{"on-swipe" => "cardSwiped()"}
-									%p
-										Swipe left or right for a new opportunity
-								%swipe-card{"ng-repeat" => "card in cards", "on-destroy" => "cardDestroyed($index)", "on-swipe" => "cardSwiped($index)"}
-									%div{"ng-controller" => "CardCtrl"}
-										=partial"home/card"
+				.card-wrapper-outer
+					.card-wrapper-inner
+						=partial"home/card"
 
 
