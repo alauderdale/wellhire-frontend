@@ -1,4 +1,4 @@
-.card
+.card.animate-partial.card-like-partial
 	.card-body
 		.text-center
 			=image_tag "company_logo_2.png", :class=>"img-responsive half-margin-bottom card-img"
@@ -11,7 +11,7 @@
 		.pull-right.text-right
 			%p.no-margin-bottom
 				Match
-			%p.no-margin-bottom
+			%p.no-margin-bottom.text-success.bold-font-name
 				98%
 		.clearfix
 		%hr.quarter-margin-top.quarter-margin-bottom
@@ -38,9 +38,13 @@
 		.row{:style=>"padding-top:15px;"}
 			.col-lg-12
 				.margin-auto.text-center.card-picker-btn-group
-					%a.text-danger.yes-btn
+					%a.text-danger.no-btn
 						%i.fa.fa-times
 					%a.info-btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
 						%i.fa.fa-info-circle
-					%a.text-success.no-btn
+					%a.text-success.yes-btn
 						%i.fa.fa-check
+	.likedislike.like.animate-show
+		Like
+	.likedislike.dislike.animate-show
+		Dislike

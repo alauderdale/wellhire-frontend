@@ -1,4 +1,4 @@
-$card-height: 390px;
+$card-corner-radius: 6px;
 
 .card-picker-btn-group{
 	a{
@@ -8,10 +8,10 @@ $card-height: 390px;
 				outline: none;
 			}
 		&.yes-btn{
-			margin-right:$baseline;
+			margin-left:$baseline;
 		}
 		&.no-btn{
-			margin-left:$baseline;
+			margin-right:$baseline;
 		}
 		&.info-btn{
 			color:$text-color;
@@ -23,6 +23,13 @@ $card-height: 390px;
   .card-wrapper-inner{
     .card{
       background-color:white;
+      border-radius:$card-corner-radius;
+      box-shadow:0 1px 1px rgba(0,0,0,.1);
+      cursor:move;
+      .card-img{
+        border-top-left-radius:$card-corner-radius;
+        border-top-right-radius:$card-corner-radius;
+      }
       .card-body{
       }
       .card-footer{
@@ -33,6 +40,63 @@ $card-height: 390px;
       .arrow{
         color:$text-color;
       }
+      //swiping classes
+      &.animate-partial{
+        @include transition(all linear .2s);
+      }
+      //like
+      &.animate-like-partial{
+        @include transform(translate3d(10%,0,0) rotate(5deg));
+      }
+      &.animate-like-remove{
+        @include transform(translateX(100%) rotate(60deg));
+      }
+      //dislike
+      &.animate-dislike-partial{
+        @include transform(translate3d(-10%,0,0) rotate(-5deg));
+      }
+      &.animate-dislike-remove{
+        @include transform(translateX(-100%) rotate(-60deg));
+      }
+      //like and dislike stamps
+      .likedislike{
+        font-size: 55px;
+        font-weight: 700;
+        z-index: 500;
+        text-align: right;
+        border: 6px solid #EE2E2E;
+        border-radius: 10px;
+        width: auto;
+        padding: 0 10px;
+        position:absolute;
+        line-height:1em;
+        &.animate-show{
+          transition: all linear .2s;
+          opacity: 0;
+          visibility: hidden;
+        }
+        &.active{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .like{
+        color: #26BD19;
+        border-color: #26BD19;
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
+        top: 70px;
+        left: 30px;
+      }
+      .dislike{
+        color: #EE2E2E;
+        border-color: #EE2E2E;
+        -webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+        top: 70px;
+        right: 30px;
+      }
     }
   }
 }
+
