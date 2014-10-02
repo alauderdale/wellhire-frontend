@@ -1,49 +1,58 @@
 .card.animate-partial.card-like-partial
 	.card-body
+		.card-match-status
+			%p.no-margin-bottom.text-center
+				%span.extra-bold-font-name
+					93% 
+				MATCH
 		.text-center
-			=image_tag "company_logo_2.png", :class=>"img-responsive half-margin-bottom card-img"
-	.card-footer
-		.pull-left
-			%p.no-margin-bottom.bold-font-name
-				Alpha Sites
-			%p.no-margin-bottom
-				Designer
-		.pull-right.text-right
-			%p.no-margin-bottom
-				Match
-			%p.no-margin-bottom.text-success.bold-font-name
-				98%
+			=image_tag "company_logo_4.png", :class=>"img-responsive half-margin-bottom card-img"
+		.card-title
+			.media-object
+				.pull-left
+					=image_tag "company_logo_thumb.png", :class=>"quarter-margin-right"
+				.media-body
+					%p.no-margin-bottom.bold-font-name
+						Sales Force
+					%p.no-margin-bottom
+						Designer
 		.clearfix
-		%hr.quarter-margin-top.quarter-margin-bottom
+	.card-footer
+		.row
+			.col-xs-4.text-center
+				%i.fa.fa-location-arrow.primary-text-color
+				%p.no-margin-bottom
+					New York, NY
+			.col-xs-4.text-center
+				%i.fa.fa-suitcase.primary-text-color
+				%p.no-margin-bottom
+					Full-time
+			.col-xs-4.text-center
+				%i.fa.fa-dollar.primary-text-color
+				%p.no-margin-bottom
+					Competitive
+		%hr.half-margin-top.half-margin-bottom
 		%p.no-margin-bottom
-			Recently nammed the UKs 3ed fastest growing company by Sunday Times Track. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of                        
+			Sales force is looking for a designer to serve alongside the best technical minds in the industry...                      
 			%br
 		%p.text-center.no-margin-bottom
 			%a.arrow{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
 				%i.fa.fa-chevron-down
-		%hr.quarter-margin-top.quarter-margin-bottom
-		.row
-			.col-xs-4.text-center
-				%i.fa.fa-location-arrow
-				%p.microtext.bold-font-name.no-margin-bottom
-					New York, NY
-			.col-xs-4.text-center
-				%i.fa.fa-suitcase
-				%p.microtext.bold-font-name.no-margin-bottom
-					Full-time
-			.col-xs-4.text-center
-				%i.fa.fa-dollar
-				%p.microtext.bold-font-name.no-margin-bottom
-					Competitive
 		.row{:style=>"padding-top:15px;"}
 			.col-lg-12
+				%hr.no-margin-top.half-margin-bottom
 				.margin-auto.text-center.card-picker-btn-group
-					%a.text-danger.no-btn
-						%i.fa.fa-times
-					%a.info-btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
-						%i.fa.fa-info-circle
-					%a.text-success.yes-btn
-						%i.fa.fa-check
+					.row
+						.col-xs-6
+							%a.no-btn.text-center.text-uppercase
+								%i.fa.fa-times.text-danger
+								%p.no-margin-bottom
+									Not Interested
+						.col-xs-6
+							%a.yes-btn.text-center.text-uppercase
+								%i.fa.fa-check.text-success
+								%p.no-margin-bottom
+									Interested
 	.likedislike.like.animate-show
 		Like
 	.likedislike.dislike.animate-show

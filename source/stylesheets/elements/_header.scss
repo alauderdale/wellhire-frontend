@@ -1,13 +1,12 @@
 .main-nav-topbar{
-	background:transparent;
+	background:shade($primary-color,50%);
 	border-radius:0;
 	border:none;
-	margin-bottom:0;
 	a{
 		&.topbar-btn{
 			color:$primary-color;
 			z-index: 999;
 		}
-		color:tint($text-color,30%)!important;
+		color:white!important;
 	}
 }
