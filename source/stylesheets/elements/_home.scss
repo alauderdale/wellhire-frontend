@@ -53,6 +53,15 @@ $card-corner-radius: 2px;
       .card-footer{
         padding:$baseline/2;
         border:1px solid $gray-color;
+        .info-icons{
+          p{
+            font-size:.9em;
+          }
+          i{
+            color:$primary-color-light;
+            font-size:1.5em;
+          }
+        }
       }
       .arrow{
         color:$text-color;
