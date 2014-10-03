@@ -5,7 +5,7 @@
   
 ;;;
 
-%section
+%section.no-padding-top
 	.container
 		.row
 			.col-lg-12
@@ -18,47 +18,18 @@
 				%p.margin-bottom
 					Select an opportunity below to see candidates that have liked your posting. Click on their names to view their profiles and start a conversation. 
 		.row.margin-bottom
-			.col-lg-12
-				%p.no-margin-bottom
-					.btn-group
-						%button.btn.btn-default{type: "button"}
-							Opportunity
-						%button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
-							%span.caret
-							%span.sr-only
-								Toggle Dropdown
-						%ul.dropdown-menu{role: "menu"}
-							%li
-								%a{:href=>"#"}
-									Opportunity 1
-							%li
-								%a{:href=>"#"}
-									Opportunity 2
-							%li
-								%a{:href=>"#"}
-									Opportunity 3
-							%li
-								%a{:href=>"#"}
-									Opportunity 4
-					.btn-group
-						%button.btn.btn-default{type: "button"}
-							Bulk Actions
-						%button.btn.btn-default.dropdown-toggle{"data-toggle" => "dropdown", type: "button"}
-							%span.caret
-							%span.sr-only
-								Toggle Dropdown
-						%ul.dropdown-menu{role: "menu"}
-							%li
-								%a{:href=>"#"}
-									Like
-							%li
-								%a{:href=>"#"}
-									Dislike
-					%form.navbar-form.navbar-right.no-margin-top{role: "search"}
-						.form-group
-							%input.form-control{type:"text", placeholder:"search"}
-						%button.btn{type:"submit"}
-							Submit
+			.col-sm-3
+				%select.form-control.pull-left
+					%option
+						Opportunity 1
+			.col-sm-3
+				%select.form-control.pull-left
+					%option
+						Bulk Actions
+			.col-sm-6
+				%form.navbar-form.navbar-right.no-margin-top{role: "search"}
+					.form-group
+						%input.form-control.round-input{type:"text", placeholder:"search"}
 		.row
 			.col-lg-12
 				=partial "/employer/candidates/candidates_table"
