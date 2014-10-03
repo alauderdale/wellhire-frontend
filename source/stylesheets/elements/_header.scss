@@ -1,5 +1,5 @@
 .main-nav-topbar{
-	background:shade($primary-color,50%);
+	background:$primary-color-dark;
 	border-radius:0;
 	border:none;
 	a{
@@ -9,4 +9,8 @@
 		}
 		color:white!important;
 	}
+}
+
+img.navbar-logo{
+	margin-top:12px;
 }

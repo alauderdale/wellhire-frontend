@@ -3,7 +3,7 @@ $card-corner-radius: 2px;
 .card-picker-btn-group{
 	a{
     i{
-      font-size:$baseline*1.5;
+      font-size:$baseline;
     }
     cursor:pointer;
 		&:focus{
@@ -35,14 +35,15 @@ $card-corner-radius: 2px;
         padding-top:$baseline/4;
       }
       .card-title{
-        padding:$baseline/2;
+        padding:$baseline/2 $baseline/2 $baseline/4 $baseline/2;
         float: left;
         @extend .white-text ;
         background:rgba(0,0,0,.5);
+        @include linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.63) 100%);
         width:100%;
         position:relative;
-        bottom:64px;
-        margin-bottom:-64px;
+        bottom:58px;
+        margin-bottom:-58px;
         img{
           width:40px;
           height:40px;

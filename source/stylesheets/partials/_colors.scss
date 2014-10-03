@@ -1,6 +1,7 @@
 // color vars
 
 $primary-color: #138abb;
+$primary-color-dark: shade($primary-color,50%);
 $secondary-color: #f47b2c;
 $tertiary-color: #ffd266;
 $light-gray-color: #f2f2f2;

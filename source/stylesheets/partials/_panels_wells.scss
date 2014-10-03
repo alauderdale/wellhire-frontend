@@ -2,7 +2,7 @@
 	&.login-panel{
 		border:none;
 		.panel-heading{
-			background-color:$primary-color;
+			background-color:$primary-color-dark;
 			@extend .white-text;
 		}
 		.panel-body{

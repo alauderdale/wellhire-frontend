@@ -1,14 +1,14 @@
 .card.animate-partial.card-like-partial
 	.card-body
-		.card-match-status
-			%p.no-margin-bottom.text-center
-				%span.extra-bold-font-name
-					93% 
-				MATCH
+		/ .card-match-status
+		/ 	%p.no-margin-bottom.text-center
+		/ 		%span.extra-bold-font-name
+		/ 			93% 
+		/ 		MATCH
 		.text-center
 			=image_tag "company_logo_4.png", :class=>"img-responsive half-margin-bottom card-img"
 		.card-title
-			.media-object
+			.media-object.pull-left
 				.pull-left
 					=image_tag "company_logo_thumb.png", :class=>"quarter-margin-right"
 				.media-body
@@ -16,13 +16,18 @@
 						Sales Force
 					%p.no-margin-bottom
 						Designer
+			.match.pull-right.text-right
+				%h3.no-margin-bottom.extra-bold-font-name{:style=>"line-height:20px;"}
+					93%
+				%p.no-margin-bottom
+					MATCH
 		.clearfix
 	.card-footer
 		.row
 			.col-xs-4.text-center
 				%i.fa.fa-location-arrow.primary-text-color
 				%p.no-margin-bottom
-					New York, NY
+					Boulder, CO
 			.col-xs-4.text-center
 				%i.fa.fa-suitcase.primary-text-color
 				%p.no-margin-bottom
@@ -33,7 +38,7 @@
 					Competitive
 		%hr.half-margin-top.half-margin-bottom
 		%p.no-margin-bottom
-			Sales force is looking for a designer to serve alongside the best technical minds in the industry...                      
+			Sales force is looking for a designer to serve alongside the best technical minds in...                      
 			%br
 		%p.text-center.no-margin-bottom
 			%a.arrow{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}

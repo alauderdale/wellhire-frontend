@@ -9,23 +9,23 @@
 		.col-sm-6
 			.panel.panel-default.login-panel
 				.panel-heading
-					.text-center.margin-top
+					.text-center.half-margin-top
 						=image_tag '/images/logo_white.png', :width=>"150px", :class=>"half-margin-bottom"
 					.clearfix
 						%p.text-center.no-margin-bottom
 							Connect your linkedin account to get started
 				.panel-body
-					%p.text-center.quarter-margin-top{:style=>"line-height:18px;"}
+					%p.text-center{:style=>"line-height:14px;"}
 						Wellhire uses LinkedIn to build your profile for you. Login in below to get started.
 					%form#linkedInConnect
 						.margin-bottom
 							%input.form-control.login-input.input-lg{:placeholder => "Email", :type => "text"}
 							%input.form-control.login-input-pass.input-lg{:placeholder => "Password", :type => "password"}
-					%a.btn.btn-primary.btn-block.btn-lg{:href=>"/home"}
+					%a.btn.btn-default.btn-block.btn-lg{:href=>"/home"}
 						%i.fa.fa-linkedin.half-margin-right
 						Linkedin Connect
 			.text-center
 				%h3
-					%a{:href=>"employer/account/login", :style=>"color:white; text-decoration:underline;"}
+					%a.btn.btn-primary.btn-block.btn-lg{:href=>"employer/account/login", :style=>"color:white; text-decoration:underline;"}
 						I'm an employer
 		.col-sm-3
