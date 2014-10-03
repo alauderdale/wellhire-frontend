@@ -17,27 +17,26 @@
     <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
     <body class='preferences preferences_index'>
       <nav class='navmenu navmenu-default navmenu-fixed-left offcanvas side-nav' id='mainNavLeftSideMenu' role='navigation'>
-        <a class='logotype' href='/home'>
-          Wellhire
-        </a>
+        <!-- %a.logotype{:href=>"/home"} -->
+        <!-- Wellhire -->
         <a class='side-menu-link' href='/home'>
-          <i class='fa fa-briefcase quarter-margin-right'></i>
-          Browse Opportunities
+          <i class='fa fa-briefcase'></i>
+          Opportunities
         </a>
         <a class='side-menu-link' href='/profile'>
-          <i class='fa fa-user quarter-margin-right'></i>
+          <i class='fa fa-user'></i>
           Profile
         </a>
         <a class='side-menu-link' href='/preferences'>
-          <i class='fa fa-gear quarter-margin-right'></i>
+          <i class='fa fa-gear'></i>
           Preferences
         </a>
         <a class='side-menu-link' href='/'>
-          <i class='fa fa-sign-out quarter-margin-right'></i>
+          <i class='fa fa-sign-out'></i>
           Sign Out
         </a>
       </nav>
-      <nav class='navmenu navmenu-default navmenu-fixed-right offcanvas side-nav' id='mainNavRightSideMenu' role='navigation'>
+      <nav class='navmenu navmenu-default navmenu-fixed-right offcanvas side-nav half-padding-top' id='mainNavRightSideMenu' role='navigation'>
         <div class='margin-bottom'>
           <p class='bold-font-name'>
             Matches
@@ -119,6 +118,9 @@
               2
             </div>
           </a>
+          <div class='text-center'>
+            <img width="100px" class="navbar-logo" src="../images/logo_white.png" />
+          </div>
         </div>
       </div>
       <!-- end menu -->
@@ -152,7 +154,7 @@
           <div class='modal-content'></div>
         </div>
       </div>
-      <div aria-hidden='true' class='modal modal-sm' id='matchAlertModal' role='dialog'>
+      <div aria-hidden='true' class='modal full-page-modal' id='matchAlertModal' role='dialog'>
         <div class='modal-dialog modal-lg'>
           <div class='modal-content'></div>
         </div>

@@ -14,7 +14,7 @@
     <script src="../../javascripts/lib/jasny-bootstrap.js" type="text/javascript"></script>
     <script src="../../javascripts/lib/footable/footable.js" type="text/javascript"></script>
     <script src="../../javascripts/lib/footable/footable.filter.js" type="text/javascript"></script>
-    <script src="../../javascripts/scripts.js" type="text/javascript"></script>
+    <script src="../../javascripts/scripts-employer.js" type="text/javascript"></script>
     <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
   </head>
   <body class='employer employer_candidates employer_candidates_index'>
@@ -38,7 +38,7 @@
             <li class='active'>
               <a class='navbar-item' href='/employer/candidates'>
                 <i class='fa fa-users'></i>
-                Candidate Manager
+                Candidates
               </a>
             </li>
             <li class=''>
@@ -83,7 +83,7 @@
       </div>
     </nav>
     <!-- end menu -->
-    <section>
+    <section class='no-padding-top'>
       <div class='container'>
         <div class='row'>
           <div class='col-lg-12'>
@@ -103,78 +103,30 @@
           </div>
         </div>
         <div class='row margin-bottom'>
-          <div class='col-lg-12'>
-            <p class='no-margin-bottom'>
-              <div class='btn-group'>
-                <button class='btn btn-default' type='button'>
-                  Opportunity
-                </button>
-                <button class='btn btn-default dropdown-toggle' data-toggle='dropdown' type='button'>
-                  <span class='caret'></span>
-                  <span class='sr-only'>
-                    Toggle Dropdown
-                  </span>
-                </button>
-                <ul class='dropdown-menu' role='menu'>
-                  <li>
-                    <a href='#'>
-                      Opportunity 1
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Opportunity 2
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Opportunity 3
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Opportunity 4
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class='btn-group'>
-                <button class='btn btn-default' type='button'>
-                  Bulk Actions
-                </button>
-                <button class='btn btn-default dropdown-toggle' data-toggle='dropdown' type='button'>
-                  <span class='caret'></span>
-                  <span class='sr-only'>
-                    Toggle Dropdown
-                  </span>
-                </button>
-                <ul class='dropdown-menu' role='menu'>
-                  <li>
-                    <a href='#'>
-                      Like
-                    </a>
-                  </li>
-                  <li>
-                    <a href='#'>
-                      Dislike
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <form class='navbar-form navbar-right no-margin-top' role='search'>
-                <div class='form-group'>
-                  <input class='form-control' placeholder='search' type='text'>
-                </div>
-                <button class='btn' type='submit'>
-                  Submit
-                </button>
-              </form>
-            </p>
+          <div class='col-sm-3'>
+            <select class='form-control half-margin-bottom'>
+              <option>
+                Opportunity 1
+              </option>
+            </select>
+            <div class='clearfiix'></div>
+          </div>
+          <div class='col-sm-3'>
+            <select class='form-control half-margin-bottom'>
+              <option>
+                Bulk Actions
+              </option>
+            </select>
+            <div class='clearfiix'></div>
+          </div>
+          <div class='col-sm-6'>
+            <input class='form-control round-input' placeholder='search' type='text'>
+            <div class='clearfix'></div>
           </div>
         </div>
         <div class='row'>
           <div class='col-lg-12'>
-            <table class='display table table-hover margin-top border-bottom' id='table'>
+            <table class='display table table-hover margin-top border-bottom wh-table' id='table'>
               <thead>
                 <tr>
                   <th class='bs-checkbox'></th>

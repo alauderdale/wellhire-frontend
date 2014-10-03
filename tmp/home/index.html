@@ -17,27 +17,26 @@
     <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
     <body class='home home_index'>
       <nav class='navmenu navmenu-default navmenu-fixed-left offcanvas side-nav' id='mainNavLeftSideMenu' role='navigation'>
-        <a class='logotype' href='/home'>
-          Wellhire
-        </a>
+        <!-- %a.logotype{:href=>"/home"} -->
+        <!-- Wellhire -->
         <a class='side-menu-link' href='/home'>
-          <i class='fa fa-briefcase quarter-margin-right'></i>
-          Browse Opportunities
+          <i class='fa fa-briefcase'></i>
+          Opportunities
         </a>
         <a class='side-menu-link' href='/profile'>
-          <i class='fa fa-user quarter-margin-right'></i>
+          <i class='fa fa-user'></i>
           Profile
         </a>
         <a class='side-menu-link' href='/preferences'>
-          <i class='fa fa-gear quarter-margin-right'></i>
+          <i class='fa fa-gear'></i>
           Preferences
         </a>
         <a class='side-menu-link' href='/'>
-          <i class='fa fa-sign-out quarter-margin-right'></i>
+          <i class='fa fa-sign-out'></i>
           Sign Out
         </a>
       </nav>
-      <nav class='navmenu navmenu-default navmenu-fixed-right offcanvas side-nav' id='mainNavRightSideMenu' role='navigation'>
+      <nav class='navmenu navmenu-default navmenu-fixed-right offcanvas side-nav half-padding-top' id='mainNavRightSideMenu' role='navigation'>
         <div class='margin-bottom'>
           <p class='bold-font-name'>
             Matches
@@ -119,6 +118,9 @@
               2
             </div>
           </a>
+          <div class='text-center'>
+            <img width="100px" class="navbar-logo" src="../images/logo_white.png" />
+          </div>
         </div>
       </div>
       <!-- end menu -->
@@ -177,31 +179,63 @@
                   <div class='card-wrapper-inner'>
                     <div class='card animate-partial card-like-partial'>
                       <div class='card-body'>
+                        <!-- .card-match-status -->
+                        <!-- %p.no-margin-bottom.text-center -->
+                        <!-- %span.extra-bold-font-name -->
+                        <!-- 93% -->
+                        <!-- MATCH -->
                         <div class='text-center'>
-                          <img class="img-responsive half-margin-bottom card-img" src="../images/company_logo_2.png" />
+                          <img class="img-responsive half-margin-bottom card-img" src="../images/company_logo_4.png" />
                         </div>
-                      </div>
-                      <div class='card-footer'>
-                        <div class='pull-left'>
-                          <p class='no-margin-bottom bold-font-name'>
-                            Alpha Sites
-                          </p>
-                          <p class='no-margin-bottom'>
-                            Designer
-                          </p>
-                        </div>
-                        <div class='pull-right text-right'>
-                          <p class='no-margin-bottom'>
-                            Match
-                          </p>
-                          <p class='no-margin-bottom text-success bold-font-name'>
-                            98%
-                          </p>
+                        <div class='card-title'>
+                          <div class='media-object pull-left'>
+                            <div class='pull-left'>
+                              <img class="quarter-margin-right" src="../images/company_logo_thumb.png" />
+                            </div>
+                            <div class='media-body'>
+                              <p class='no-margin-bottom bold-font-name'>
+                                Sales Force
+                              </p>
+                              <p class='no-margin-bottom'>
+                                Designer
+                              </p>
+                            </div>
+                          </div>
+                          <div class='match pull-right text-right'>
+                            <h3 class='no-margin-bottom extra-bold-font-name' style='line-height:20px;'>
+                              93%
+                            </h3>
+                            <p class='no-margin-bottom'>
+                              MATCH
+                            </p>
+                          </div>
                         </div>
                         <div class='clearfix'></div>
-                        <hr class='quarter-margin-top quarter-margin-bottom'>
+                      </div>
+                      <div class='card-footer'>
+                        <div class='row info-icons'>
+                          <div class='col-xs-4 text-center'>
+                            <i class='fa fa-location-arrow'></i>
+                            <p class='no-margin-bottom'>
+                              Boulder, CO
+                            </p>
+                          </div>
+                          <div class='col-xs-4 text-center'>
+                            <i class='fa fa-suitcase'></i>
+                            <p class='no-margin-bottom'>
+                              Full-time
+                            </p>
+                          </div>
+                          <div class='col-xs-4 text-center'>
+                            <i class='fa fa-dollar'></i>
+                            <p class='no-margin-bottom'>
+                              Competitive
+                            </p>
+                          </div>
+                        </div>
+                        <hr class='half-margin-top half-margin-bottom'>
                         <p class='no-margin-bottom'>
-                          Recently nammed the UKs 3ed fastest growing company by Sunday Times Track. Alpha Sights is on the leading edge of the knowledge revolution. Operating out of
+                          Sales force is looking for a designer to serve alongside the best technical minds in...
                           <br>
                         </p>
                         <p class='text-center no-margin-bottom'>
@@ -209,39 +243,28 @@
                             <i class='fa fa-chevron-down'></i>
                           </a>
                         </p>
-                        <hr class='quarter-margin-top quarter-margin-bottom'>
-                        <div class='row'>
-                          <div class='col-xs-4 text-center'>
-                            <i class='fa fa-location-arrow'></i>
-                            <p class='microtext bold-font-name no-margin-bottom'>
-                              New York, NY
-                            </p>
-                          </div>
-                          <div class='col-xs-4 text-center'>
-                            <i class='fa fa-suitcase'></i>
-                            <p class='microtext bold-font-name no-margin-bottom'>
-                              Full-time
-                            </p>
-                          </div>
-                          <div class='col-xs-4 text-center'>
-                            <i class='fa fa-dollar'></i>
-                            <p class='microtext bold-font-name no-margin-bottom'>
-                              Competitive
-                            </p>
-                          </div>
-                        </div>
                         <div class='row' style='padding-top:15px;'>
                           <div class='col-lg-12'>
+                            <hr class='no-margin-top half-margin-bottom'>
                             <div class='margin-auto text-center card-picker-btn-group'>
-                              <a class='text-danger no-btn'>
-                                <i class='fa fa-times'></i>
-                              </a>
-                              <a class='info-btn' data-target='#showOpportunityModal' data-toggle='modal' href='/opportunities/show'>
-                                <i class='fa fa-info-circle'></i>
-                              </a>
-                              <a class='text-success yes-btn'>
-                                <i class='fa fa-check'></i>
-                              </a>
+                              <div class='row'>
+                                <div class='col-xs-6'>
+                                  <a class='no-btn text-center text-uppercase'>
+                                    <i class='fa fa-times text-danger'></i>
+                                    <p class='no-margin-bottom'>
+                                      Not Interested
+                                    </p>
+                                  </a>
+                                </div>
+                                <div class='col-xs-6'>
+                                  <a class='yes-btn text-center text-uppercase'>
+                                    <i class='fa fa-check text-success'></i>
+                                    <p class='no-margin-bottom'>
+                                      Interested
+                                    </p>
+                                  </a>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -271,7 +294,7 @@
           <div class='modal-content'></div>
         </div>
       </div>
-      <div aria-hidden='true' class='modal modal-sm' id='matchAlertModal' role='dialog'>
+      <div aria-hidden='true' class='modal full-page-modal' id='matchAlertModal' role='dialog'>
         <div class='modal-dialog modal-lg'>
           <div class='modal-content'></div>
         </div>
