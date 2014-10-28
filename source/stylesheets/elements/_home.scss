@@ -15,10 +15,18 @@ $card-corner-radius: 2px;
 .card-wrapper-outer{
   .card-wrapper-inner{
     .card{
+      position:absolute;
+      top:0;
       background-color:white;
       border-radius:$card-corner-radius;
       // box-shadow:0 1px 1px rgba(0,0,0,.1);
       cursor:move;
+      &:nth-child(1){
+        top:20px;
+      }
+      &:nth-child(2){
+        top:10px;
+      }
       img.card-img{
         border-top-left-radius:$card-corner-radius;
         border-top-right-radius:$card-corner-radius;
@@ -53,6 +61,10 @@ $card-corner-radius: 2px;
       .card-footer{
         padding:$baseline/2;
         border:1px solid $gray-color;
+        p.card-description{
+          height:60px;
+          overflow:hidden;
+        }
         .info-icons{
           p{
             font-size:.9em;

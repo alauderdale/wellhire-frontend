@@ -49,6 +49,7 @@
 			.col-md-8
 				.card-wrapper-outer
 					.card-wrapper-inner
-						=partial"home/card"
+						-3.times.with_index do |i|
+							=partial"home/card", :locals=>{:i=>i}
 
 

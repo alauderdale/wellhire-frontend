@@ -1,4 +1,4 @@
-.card.animate-partial.card-like-partial
+.card.animate-partial{:class=>"card-#{i}"}
 	.card-body
 		/ .card-match-status
 		/ 	%p.no-margin-bottom.text-center
@@ -27,22 +27,27 @@
 			.col-xs-4.text-center
 				%i.fa.fa-location-arrow
 				%p.no-margin-bottom
-					Boulder, CO
-			.col-xs-4.text-center
-				%i.fa.fa-suitcase
-				%p.no-margin-bottom
-					Full-time
-			.col-xs-4.text-center
+					%small
+						Boulder, CO
+			.col-xs-3.text-center
+				%span{:style=>"position:relative; left:10px;"}
+					%i.fa.fa-suitcase
+					%p.no-margin-bottom
+						%small
+							Full-time
+			.col-xs-5.text-center
 				%i.fa.fa-dollar
 				%p.no-margin-bottom
-					Competitive
+					%small
+						100,000 - 135,000
 		%hr.half-margin-top.half-margin-bottom
-		%p.no-margin-bottom
-			Sales force is looking for a designer to serve alongside the best technical minds in...                      
+		%p.no-margin-bottom.card-description
+			%small
+				Vestibulum non elit vel enim tristique pretium quis non mauris. Quisque elementum nunc laoreet magna viverra eleifend.                   
 			%br
 		%p.text-center.no-margin-bottom
 			%a.arrow{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
-				%i.fa.fa-chevron-down
+				%i.fa.fa-info-circle
 		.row{:style=>"padding-top:15px;"}
 			.col-lg-12
 				%hr.no-margin-top.half-margin-bottom
