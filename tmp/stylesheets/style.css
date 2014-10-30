@@ -763,7 +763,7 @@ img.navbar-logo {
   margin-top: 12px; }
 
 /* line 1, /Users/alauderdale/Dropbox/clients/wellhire/newprod/wellhire_frontend/source/stylesheets/elements/_sign-in.scss */
-body.index {
+.login-bg {
   background: no-repeat center center fixed #138abb url(../images/login/login_bg.png);
   background-size: cover; }
 
