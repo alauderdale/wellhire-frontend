@@ -4,3 +4,33 @@
 "activeclass": "candidates"
   
 ;;;
+
+%section.no-padding-top
+	.container
+		.row
+			.col-lg-12
+				.page-header
+					%h1.main-page-header
+						%span.half-margin-right
+							%small
+								%i.fa.fa-users 
+						Candidate Manager
+				%p.margin-bottom
+					Select an opportunity below to see candidates that have liked your posting. Click on their names to view their profiles and start a conversation. 
+		.row.margin-bottom
+			.col-sm-3
+				%select.form-control.half-margin-bottom
+					%option
+						Opportunity 1
+				.clearfiix
+			.col-sm-3
+				%select.form-control.half-margin-bottom
+					%option
+						Bulk Actions
+				.clearfiix
+			.col-sm-6
+				%input.form-control.round-input{type:"text", placeholder:"search"}
+				.clearfix
+		.row
+			.col-lg-12
+				=partial "/employer/candidates/candidates_table"

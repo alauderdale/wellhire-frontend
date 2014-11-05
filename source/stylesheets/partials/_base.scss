@@ -9,7 +9,6 @@ $baseline: 24px;
 }
 
 html {
-	overflow-x: hidden;
 	font-size: 62.5%;
 }
 
@@ -22,7 +21,6 @@ body{
   width:100%;
   line-height: $baseline;
   height:100%;
-  overflow:hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   zoom:1;
@@ -126,4 +124,10 @@ img{
 }
 .border-left{
   border-left:1px solid $gray-color;
+}
+
+//labeld
+
+.label-info{
+  background-color:$primary-color!important;
 }

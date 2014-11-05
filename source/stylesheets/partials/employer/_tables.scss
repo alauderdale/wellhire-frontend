@@ -14,5 +14,13 @@ table{
         border-right:none;
       }
     }
+    &.wh-table{
+      .fa-heart-o,.fa-heart{
+        color:$pink-color;
+      }
+      .fa-thumbs-o-down,.fa-thumbs-up,.fa-thumbs-o-up,.fa-thumbs-down{
+        color:$primary-color;
+      }
+    }
   }
 }

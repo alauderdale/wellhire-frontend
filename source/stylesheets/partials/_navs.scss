@@ -1,12 +1,13 @@
 .side-nav{
 	padding:$baseline/2;
-	padding-top:17px;
-	background:$primary-color;
+	padding-top:0;
+	background:shade($primary-color-dark,50%);
 	border:none;
 	width:250px;
 	p,h1,h2,h3,h4,h5,h6,a{
 			color:white;
 			line-height:$baseline/1.2;
+			font-size:1.1em;
 	}
 	a{
 		&.logotype{
@@ -22,14 +23,17 @@
 		}
 		&.side-menu-link{
 			border-bottom:1px solid rgba(255,255,255,.2);
-			padding:$baseline/2 0;
+			padding:$baseline 0;
 			display:block;
 			color:rgba(255,255,255,.9);
 			@include transition-duration(.2s);
-			padding-bottom:$baseline/2;
 			font-family:$medium-font-name;
 			&:hover{
 				color:white;
+			}
+			i{
+				font-size:1.5em;
+				margin-right:$baseline/2;
 			}
 		}
 		&.menu-thumbnail{
@@ -54,7 +58,7 @@
 			padding:$baseline/2 0;
 			p{
 				margin-bottom:0;
-				line-height:15px;
+				line-height:18px;
 			}
 			.media-heading{
 				margin-bottom:3px;

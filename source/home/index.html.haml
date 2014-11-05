@@ -1,18 +1,55 @@
-/ {"no-scroll" => ""}
+:javascript
+	$(document).ready(function(){
+
+		$('a.yes-btn').click(function(){
+
+			$('.card').removeClass('animate-dislike-remove');
+			$('.dislike').removeClass('active');
+
+
+			$('.card').addClass('animate-like-remove').fadeOut(200);
+			$('.like').addClass('active');
+
+		});
+
+		$('a.no-btn').click(function(){
+			$('.card').removeClass('animate-like-remove');
+			$('.like').removeClass('active');
+
+			$('.card').addClass('animate-dislike-remove').fadeOut(200);
+			$('.dislike').addClass('active');
+		});
+
+		//swipe action
+		$(".card").swipe({
+			swipeRight:function() {
+			  console.log ( 'you swipped right' );
+			  $('.card').removeClass('animate-dislike-partial');
+				$('.dislike').removeClass('active');
+				$('.card').addClass('animate-like-partial');
+				$('.like').addClass('active');
+			},
+
+			swipeLeft:function() {
+			  console.log ( 'you swipped left' );
+			  $('.card').removeClass('animate-like-partial');
+				$('.like').removeClass('active');
+				$('.card').addClass('animate-dislike-partial');
+				$('.dislike').addClass('active');
+			}
+		});
+
+
+
+	});
 %section.no-padding-top
 	.container
 		.row
 			.col-md-2
 			.col-md-8
-				.item-wrapper-outer
-					.item-wrapper-inner
-						%pane.pane{"ng-controller" => "CardsCtrl"}
-							%swipe-cards
-								%swipe-card#start-card{"on-swipe" => "cardSwiped()"}
-									%p
-										Swipe left or right for a new opportunity
-								%swipe-card{"ng-repeat" => "card in cards", "on-destroy" => "cardDestroyed($index)", "on-swipe" => "cardSwiped($index)"}
-									%div{"ng-controller" => "CardCtrl"}
-										=partial"home/card"
+				.card-wrapper-outer
+					.card-wrapper-inner
+						-3.times.with_index do |i|
+							=partial"home/card", :locals=>{:i=>i}
 
 

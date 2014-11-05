@@ -1,6 +1,17 @@
 .btn{
 	&.btn-primary{
 		background:$primary-color;
+		border-color:$primary-color;
+		&:hover{
+			border-color:$primary-color;
+		}
+	}
+}
+
+.btn{
+	&.btn-default{
+		background:$primary-color-dark;
+		color:white;
 	}
 }
 

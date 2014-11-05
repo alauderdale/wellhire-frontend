@@ -3,29 +3,31 @@
 "title": "Welcome"
 ;;;
 
-%section
+%section.half-padding-top
 	.container
 		.col-sm-3
 		.col-sm-6
 			.panel.panel-default.login-panel
 				.panel-heading
-					.text-center.margin-top
+					.text-center.half-margin-top
 						=image_tag '/images/logo_white.png', :width=>"150px", :class=>"half-margin-bottom"
-					.clearfix
-						%h4.text-center.light-font-name.no-margin-bottom
-							Connect your linkedin account
 				.panel-body
-					%p.text-center.quarter-margin-top{:style=>"line-height:18px;"}
-						Wellhire uses LinkedIn to build your profile for you. Login in below to get started.
-					%form#linkedInConnect
-						.margin-bottom
-							%input.form-control.login-input.input-lg{:placeholder => "Email", :type => "text"}
-							%input.form-control.login-input-pass.input-lg{:placeholder => "Password", :type => "password"}
-					%a.btn.btn-primary.btn-block.btn-lg{:href=>"/home"}
+					.panel.no-margin-bottom
+						.padded.no-padding-bottom
+							%p.text-center.margin-bottom{:style=>"line-height:18px;"}
+								Honest profiles offer better results. Using LinkedIn gives you a head start.
+							.text-center
+								=image_tag '/images/slide_1.png', :width=>"150px", :class=>"no-margin-bottom"
+					.text-center
+						%a{:href=>"/"}
+							%i.fa.fa-circle
+						%a{:href=>"/2"}
+							%i.fa.fa-circle-o
+						%a{:href=>"/3"}
+							%i.fa.fa-circle-o
+						%a{:href=>"/4"}
+							%i.fa.fa-circle-o
+					%a.btn.btn-default.btn-block.btn-lg{:href=>"/home"}
 						%i.fa.fa-linkedin.half-margin-right
 						Linkedin Connect
-			.text-center
-				%h3
-					%a{:href=>"employer/account/login", :style=>"color:white; text-decoration:underline;"}
-						Im an employer
 		.col-sm-3

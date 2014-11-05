@@ -1,0 +1,33 @@
+;;;
+"layout": "login",
+"title": "Welcome"
+;;;
+
+%section.half-padding-top
+	.container
+		.col-sm-3
+		.col-sm-6
+			.panel.panel-default.login-panel
+				.panel-heading
+					.text-center.half-margin-top
+						=image_tag '/images/logo_white.png', :width=>"150px", :class=>"half-margin-bottom"
+				.panel-body
+					.panel.no-margin-bottom
+						.padded.no-padding-bottom
+							%p.text-center.margin-bottom{:style=>"line-height:18px;"}
+								Express interest in job opportunities Wellhire thinks you’ll love
+							.text-center
+								=image_tag '/images/slide_2.png', :width=>"150px", :class=>"no-margin-bottom"
+					.text-center
+						%a{:href=>"/"}
+							%i.fa.fa-circle-o
+						%a{:href=>"/2"}
+							%i.fa.fa-circle
+						%a{:href=>"/3"}
+							%i.fa.fa-circle-o
+						%a{:href=>"/4"}
+							%i.fa.fa-circle-o
+					%a.btn.btn-default.btn-block.btn-lg{:href=>"/home"}
+						%i.fa.fa-linkedin.half-margin-right
+						Linkedin Connect
+		.col-sm-3

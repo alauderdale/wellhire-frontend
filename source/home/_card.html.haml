@@ -1,47 +1,69 @@
-.card
+.card.animate-partial{:class=>"card-#{i}"}
 	.card-body
+		/ .card-match-status
+		/ 	%p.no-margin-bottom.text-center
+		/ 		%span.extra-bold-font-name
+		/ 			93% 
+		/ 		MATCH
 		.text-center
-			=image_tag "{{card.image}}", :class=>"img-responsive half-margin-bottom card-img"
-			%i.fa.fa-spinner.fa-spin.card-img-spinner
-	.card-footer
-		.pull-left
-			%p.no-margin-bottom.bold-font-name
-				{{card.title}}
-			%p.no-margin-bottom
-				Designer
-		.pull-right.text-right
-			%p.no-margin-bottom
-				Match
-			%p.no-margin-bottom
-				98%
+			=image_tag "company_logo_4.png", :class=>"img-responsive half-margin-bottom card-img"
+		.card-title
+			.media-object.pull-left
+				.pull-left
+					=image_tag "company_logo_thumb.png", :class=>"quarter-margin-right"
+				.media-body
+					%p.no-margin-bottom.bold-font-name
+						Sales Force
+					%p.no-margin-bottom
+						Designer
+			.match.pull-right.text-right
+				%h3.no-margin-bottom.extra-bold-font-name{:style=>"line-height:20px;"}
+					93%
+				%p.no-margin-bottom
+					MATCH
 		.clearfix
-		%hr
-		%p.no-margin-bottom
-			{{card.description}}
+	.card-footer
+		.row.info-icons
+			.col-xs-4.text-center
+				%i.fa.fa-location-arrow
+				%p.no-margin-bottom
+					%small
+						Boulder, CO
+			.col-xs-3.text-center
+				%span{:style=>"position:relative; left:10px;"}
+					%i.fa.fa-suitcase
+					%p.no-margin-bottom
+						%small
+							Full-time
+			.col-xs-5.text-center
+				%i.fa.fa-dollar
+				%p.no-margin-bottom
+					%small
+						100,000 - 135,000
+		%hr.half-margin-top.half-margin-bottom
+		%p.no-margin-bottom.card-description
+			%small
+				Vestibulum non elit vel enim tristique pretium quis non mauris. Quisque elementum nunc laoreet magna viverra eleifend.                   
 			%br
 		%p.text-center.no-margin-bottom
 			%a.arrow{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
-				%i.fa.fa-chevron-down
-		%hr
-		.row
-			.col-xs-4.text-center
-				%i.fa.fa-location-arrow
-				%p.microtext.bold-font-name.no-margin-bottom
-					New York, NY
-			.col-xs-4.text-center
-				%i.fa.fa-suitcase
-				%p.microtext.bold-font-name.no-margin-bottom
-					Full-time
-			.col-xs-4.text-center
-				%i.fa.fa-dollar
-				%p.microtext.bold-font-name.no-margin-bottom
-					Competitive
+				%i.fa.fa-info-circle
 		.row{:style=>"padding-top:15px;"}
 			.col-lg-12
+				%hr.no-margin-top.half-margin-bottom
 				.margin-auto.text-center.card-picker-btn-group
-					%a.text-danger.yes-btn{"ng-click" => "reject()"}
-						%i.fa.fa-times
-					%a.info-btn{"data-toggle"=>"modal", :href=>"/opportunities/show", "data-target"=>"#showOpportunityModal"}
-						%i.fa.fa-info-circle
-					%a.text-success.no-btn{"ng-click" => "accept()"}
-						%i.fa.fa-check
+					.row
+						.col-xs-6
+							%a.no-btn.text-center.text-uppercase
+								%i.fa.fa-times.text-danger
+								%p.no-margin-bottom
+									Not Interested
+						.col-xs-6
+							%a.yes-btn.text-center.text-uppercase
+								%i.fa.fa-check.text-success
+								%p.no-margin-bottom
+									Interested
+	.likedislike.like.animate-show
+		Like
+	.likedislike.dislike.animate-show
+		Dislike
