@@ -12,45 +12,74 @@
 		%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
 		%h2.modal-title 
 			New Job Opportunity
+	%section.invert-section.progress-indacator.hidden-xs
+		.padded
+			.col-sm-4
+				.text-center.stage
+					.label.label-success
+						1
+					%p.no-margin-bottom.text-uppercase.quarter-margin-top
+						%small
+							%span.step-text.active
+								Job Details
+			.col-sm-4
+				.text-center.stage
+					.label.label-default
+						2
+					%p.no-margin-bottom.text-uppercase.quarter-margin-top
+						%small
+							%span.step-text
+								Job Skills
+			.col-sm-4
+				.text-center.stage
+					.label.label-default
+						3
+					%p.no-margin-bottom.text-uppercase.quarter-margin-top
+						%small
+							%span.step-text
+								Culture Fit
 	.modal-body
-		/ .alert.alert-danger
-		/ 	%button{:type=>"button", :class=>"close", "data-dismiss"=>"alert", "aria-hidden"=>"true"}
-		/ 		&times;
-		/ 	%strong
-		/ 		Opps!
-		/ 	Please correct the following errors:
-		/ 	%br
-		/ 	%small
-		/ 		• Enter a first name
-		/ 	%br
-		/ 	%small
-		/ 		• Enter a last name
 		%form{role: "form"}
 			.form-group
 				%label.control-label 
-					Title
+					Job Title
 				%input.form-control{placeholder: "Ex: UX designer"}
 			.form-group
 				%label.control-label 
 					Location
 				%input.form-control{placeholder: "Ex: San Francisco, CA"}
 			.form-group
-				%label.control-label 
-					Required Skills (Separate by comma)
-				%input.form-control{placeholder: "Ex: Wireframes, Photoshop"}
-			.form-group
 				%label.control-label
-					Opportunity Description
+					Job Description
 				%textarea.form-control{:rows=>"6",placeholder: "Quick description of the opportunity (less than 250 words)"}
 			.form-group
+				%label.control-label 
+					Team / Department
+				%input.form-control{placeholder: "Ex: Product"}
+			.form-group
 				%label.control-label
-					Team Description
-				%textarea.form-control{:rows=>"6",placeholder: "What is it like to work on your team? (less than 250 words)"}
+					Upload a Photo to Show off Your Team and/or Office
+				.clearfix
+				.fileinput.fileinput-new.quarter-margin-top{"data-provides" => "fileinput"}
+					.fileinput-new.thumbnail{:style => "width: 200px;"}
+						%img{:alt => "...", :src => "http://placehold.it/640x250"}
+					.fileinput-preview.fileinput-exists.thumbnail{:style => "max-width: 200px; max-height: 150px;"}
+					%div.half-margin-top
+						%span.btn.btn-default.btn-file
+							%span.fileinput-new 
+								Select photo
+							%span.fileinput-exists 
+								Change
+							%input{:name => "...", :type => "file"}/
+						%a.btn.btn-default.fileinput-exists{"data-dismiss" => "fileinput", :href => "#"} 
+							Remove
 
 
 	.modal-footer
-		%button.btn-link.cursor-pointer.half-margin-right{"data-dismiss" => "modal"} 
-			Cancel
-		%button.btn.btn-default{"data-dismiss" => "modal", type: "button"} 
-			%i.fa.fa-plus-circle
-			Create Opportunity
+		.pull-left
+			%button.btn-link.cursor-pointer.half-margin-right.quarter-margin-top{"data-dismiss" => "modal"} 
+				Save & Exit
+		.pull-right
+			%a.btn.btn-default.btn-lg{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/employer/opportunities/new2", "data-target"=>"#newOpportunityModalTwo"}
+				Next
+				%i.fa.fa-chevron-right

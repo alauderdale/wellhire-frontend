@@ -1,0 +1,77 @@
+;;;
+
+"layout": "modal_small"
+  
+;;;
+
+
+
+
+.modal-content
+	.modal-header
+		%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", type: "button"} ×
+		%h2.modal-title 
+			New Job Opportunity
+	%section.invert-section.progress-indacator.hidden-xs
+		.padded
+			.col-sm-4
+				.text-center.stage
+					.label.label-success
+						1
+					%p.no-margin-bottom.text-uppercase.quarter-margin-top
+						%a{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/employer/opportunities/new", "data-target"=>"#newOpportunityModal"}
+							%small
+								%span.step-text
+									Job Details
+			.col-sm-4
+				.text-center.stage
+					.label.label-success
+						2
+					%p.no-margin-bottom.text-uppercase.quarter-margin-top
+						%small
+							%span.step-text.active
+								Job Skills
+			.col-sm-4
+				.text-center.stage
+					.label.label-default
+						3
+					%p.no-margin-bottom.text-uppercase.quarter-margin-top
+						%small
+							%span.step-text
+								Culture Fit
+	.modal-body
+		%h3
+			Skills
+		%p
+			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse mi est, venenatis eget libero ut, faucibus tristique urna. Nam est nisi, dapibus eget ante eget, consectetur iaculis nibh. Donec tempor dolor enim, vel laoreet sem vulputate sit amet.
+		%form{role: "form"}
+			.form-group
+				.row
+					.col-xs-10
+						%input.form-control.quarter-margin-bottom{value: "Photoshop"}
+					.col-xs-2
+						%h2
+							%a{:href=>"#"}
+								%i.fa.fa-times-circle
+				.row
+					.col-xs-10
+						%input.form-control.quarter-margin-bottom{value: "HTML/CSS"}
+					.col-xs-2
+						%h2
+							%a{:href=>"#"}
+								%i.fa.fa-times-circle
+				%a{:href=>"#"}
+					+ Add a new skill
+
+
+	.modal-footer
+		.pull-left
+			%button.btn-link.cursor-pointer.half-margin-right.quarter-margin-top{"data-dismiss" => "modal"} 
+				Save & Exit
+		.pull-right
+			%a.btn.btn-info.btn-lg{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/employer/opportunities/new", "data-target"=>"#newOpportunityModal"}
+				%i.fa.fa-chevron-left
+				Back
+			%a.btn.btn-default.btn-lg{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/employer/opportunities/new3", "data-target"=>"#newOpportunityModalThree"}
+				Next
+				%i.fa.fa-chevron-right
