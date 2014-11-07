@@ -45,9 +45,13 @@
 					Job Title
 				%input.form-control{placeholder: "Ex: UX designer"}
 			.form-group
-				%label.control-label 
-					Location
-				%input.form-control{placeholder: "Ex: San Francisco, CA"}
+				%select.form-control 
+					%option
+						Select From Popular Locations
+			.form-group
+				%a{:href=>"#"}
+					+ Add New Location
+				
 			.form-group
 				%label.control-label
 					Job Description
@@ -56,6 +60,10 @@
 				%label.control-label 
 					Team / Department
 				%input.form-control{placeholder: "Ex: Product"}
+			.form-group
+				%label.control-label 
+					Vide Embed Link
+				%input.form-control{placeholder: "Video URL from Youtube, Vemo, ect..."}
 			.form-group
 				%label.control-label
 					Upload a Photo to Show off Your Team and/or Office
