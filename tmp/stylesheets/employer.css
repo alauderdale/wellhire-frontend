@@ -769,6 +769,11 @@ table.table.wh-table .fa-thumbs-o-down, table.table.wh-table .fa-thumbs-up, tabl
 input.round-input {
   border-radius: 100px !important; }
 
+/* line 16, /Users/alauderdale/Dropbox/clients/wellhire/newprod/wellhire_frontend/source/stylesheets/partials/employer/_forms.scss */
+.dropdown-autocomplete {
+  display: block;
+  width: 100%; }
+
 /* line 1, /Users/alauderdale/Dropbox/clients/wellhire/newprod/wellhire_frontend/source/stylesheets/elements/employer/_header.scss */
 .navbar.main-nav {
   background-color: #09455d;
