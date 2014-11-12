@@ -695,6 +695,11 @@ table.table.wh-table .fa-heart-o, table.table.wh-table .fa-heart {
 table.table.wh-table .fa-thumbs-o-down, table.table.wh-table .fa-thumbs-up, table.table.wh-table .fa-thumbs-o-up, table.table.wh-table .fa-thumbs-down {
   color: #138abb; }
 
+/* line 2, /Users/alauderdale/Dropbox/clients/wellhire/newprod/wellhire_frontend/source/stylesheets/partials/employer/_slider.scss */
+.slider .slider-selection {
+  background: transparent;
+  box-shadow: none; }
+
 /* line 4, /Users/alauderdale/Dropbox/clients/wellhire/newprod/wellhire_frontend/source/stylesheets/partials/employer/_modals.scss */
 .modal .close {
   z-index: 99; }
