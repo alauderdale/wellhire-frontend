@@ -4,7 +4,15 @@
   
 ;;;
 
+:javascript
+	$(document).ready(function(){
 
+		var slider = new Slider('.slider-1', {
+		formatter: function(value) {
+		return 'Current value: ' + value;
+		}
+		});
+	});
 
 
 .modal-content
@@ -48,20 +56,23 @@
 			.form-group
 				.row
 					.col-xs-10
-						%input.form-control.quarter-margin-bottom{value: "Photoshop"}
+						.well
+							%input.form-control.quarter-margin-bottom{value: "Photoshop"}
+							%input.slider-1{"data-slider-id" => "ex1Slider", "data-slider-max" => "5", "data-slider-min" => "0", "data-slider-step" => "1", "data-slider-value" => "14", :type => "text"}
+							.clearfix
+							.pull-left
+								%p.text-left
+									Novice
+							.pull-right
+								%p.text-left
+									Expert
+							.clearfix
 					.col-xs-2
 						%h2
 							%a{:href=>"#"}
 								%i.fa.fa-times-circle
-				.row
-					.col-xs-10
-						%input.form-control.quarter-margin-bottom{value: "HTML/CSS"}
-					.col-xs-2
-						%h2
-							%a{:href=>"#"}
-								%i.fa.fa-times-circle
-				%a{:href=>"#"}
-					+ Add a new skill
+		%a{:href=>"#"}
+			+ Add a new skill
 
 
 	.modal-footer
