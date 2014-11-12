@@ -53,35 +53,40 @@
 			Culture Fit
 		%p
 			Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse mi est, venenatis eget libero ut, faucibus tristique urna. Nam est nisi, dapibus eget ante eget, consectetur iaculis nibh. Donec tempor dolor enim, vel laoreet sem vulputate sit amet.
-		%form{role: "form"}
-			.well
-				.form-group.no-margin-bottom
-					.row
-						.col-xs-10
-							%select.form-control.quarter-margin-bottom
-								%option
-									Problem Solving
-							%input.slider-2{"data-slider-id" => "ex1Slider", "data-slider-max" => "20", "data-slider-min" => "0", "data-slider-step" => "1", "data-slider-value" => "14", :type => "text"}/
-							.clearfix
-							.pull-left
-								%p.text-left
-									Value
-							.pull-right
-								%p.text-right
-									Value
-							.clearfix
-						.col-xs-2
-							%h2.text-right{:style=>"position: relative; top: -36px; left: 25px;"}
-								%a{:href=>"#"}
-									%i.fa.fa-times-circle
-			%a{:href=>"#"}
-				+ Add a new cultural fit metric
+		.row
+			.col-xs-10
+				.well
+					%form{role: "form"}
+						.form-group.no-margin-bottom
+							%p
+								Problem Solving
+						%input.slider-2{"data-slider-id" => "ex1Slider", "data-slider-max" => "5", "data-slider-min" => "0", "data-slider-step" => "1", "data-slider-value" => "0", :type => "text"}/
+						.clearfix
+						.pull-left
+							%p.text-left
+								Value
+						.pull-right
+							%p.text-right
+								Value
+					.clearfix
+					.checkbox
+						%label
+							%input{:type => "checkbox"}
+								Exclude attribute
+			.col-xs-2
+				%h2.text-left
+					%a{:href=>"#"}
+						%i.fa.fa-times-circle
+		.row
+			.col-lg-12
+				%a{:href=>"#"}
+					+ Add a new cultural fit metric
 
 
 	.modal-footer
 		.pull-left
 			%button.btn-link.cursor-pointer.half-margin-right.quarter-margin-top{"data-dismiss" => "modal"} 
-				Save & Exit
+				Save as Draft
 		.pull-right
 			%a.btn.btn-info.btn-lg{"data-dismiss" => "modal", "data-toggle"=>"modal", :href=>"/employer/opportunities/new2", "data-target"=>"#newOpportunityModalTwo"}
 				%i.fa.fa-chevron-left
